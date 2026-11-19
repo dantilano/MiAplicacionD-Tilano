@@ -4,12 +4,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mi Proyecto DT - Demo page with marquee, banner, and responsive layout." />
+  <title>Mi Proyecto DT - Pruebas</title>
   <style>
     body {
       background-color: #f7a7a7;
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      overflow-x: hidden;
     }
 
     header {
@@ -37,23 +40,53 @@
     main {
       padding: 20px;
     }
+
+    /* Make images inside marquee sit next to text */
+    marquee img {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 0.5rem;
+    }
+
+    /* Constrain marquee to viewport width */
+    marquee {
+      display: block;
+      width: 100%;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+
+    marquee h2,
+    marquee h1 {
+      white-space: nowrap;
+      margin: 0;
+      padding: 0.5rem 0;
+      display: inline-block;
+      /* Ensure the scrolling content has enough width to scroll properly */
+      min-width: 100%;
+    }
+
+    /* Make iframe responsive */
+    iframe {
+      max-width: 100%;
+      height: auto;
+    }
   </style>
 </head>
 
 <body>
-  <marquee>
-    <h2><img src="https://i.redd.it/ffrd164h0qsh1.gif" alt="Descripción" width="80" height="45" />WELCOME (PRETEND THERE
-      IS
-      JAZZ MUSIC PLAYING)
-    </h2>
-  </marquee>
+  <!-- CSS-based Marquee (replaces deprecated <marquee> tag) -->
+  <div class="marquee-container">
+    <div class="marquee-track">
+      <h2 class="marquee-content"><img src="https://i.redd.it/ffrd164h0qsh1.gif" alt="Descripción" width="80" height="45" />WELCOME (PRETEND THERE IS JAZZ MUSIC PLAYING)</h2>
+    </div>
+  </div>
 
-  <marquee>
-    <h2><img src="https://ranfren.neocities.org/gifs/doll%20marker2.gif" alt="Gif decorativo" width="80"
-        height="45">WELCOME (PRETEND THERE
-      IS JAZZ MUSIC PLAYING)
-    </h2>
-  </marquee>
+  <div class="marquee-container">
+    <div class="marquee-track">
+      <h2 class="marquee-content"><img src="https://ranfren.neocities.org/gifs/doll%20marker2.gif" alt="Gif decorativo" width="80" height="45" />WELCOME (PRETEND THERE IS JAZZ MUSIC PLAYING)</h2>
+    </div>
+  </div>
 
   <header>
     <ul>

@@ -24,6 +24,48 @@ img {
   height: auto;
   display: block;
 }
+
+/* Make images inside marquee sit next to text */
+marquee img,
+.marquee-content img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+/* CSS-based Marquee (replaces deprecated <marquee> tag) */
+.marquee-container {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.marquee-track {
+  display: flex;
+  white-space: nowrap;
+  padding: 0.5rem 0;
+  animation: marquee-scroll 20s linear infinite;
+  width: max-content;
+}
+
+.marquee-content {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0 2rem;
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 /* Navigation Bar */
 .navigation-bar {
   background-color: rgba(0, 0, 0, 0.8);
