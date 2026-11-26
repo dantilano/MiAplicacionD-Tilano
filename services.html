@@ -4,292 +4,236 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Servicios de Mi Proyecto DT - Análisis técnicos, artículos, frameworks de productividad y más" />
-  <title>Servicios - Mi Proyecto DT</title>
+  <meta name="description" content="Servicios Sor Tech - Plataforma cloud, DevTools y AI. Innovación tecnológica con estética anime pink." />
+  <meta name="keywords" content="Sor, tecnología, cloud, devtools, AI, software, anime pink, desarrollo" />
+  <title>Servicios - Sor Tech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-
-  <header class="navigation-bar">
+  <!-- Navigation Bar -->
+  <header class="navigation-bar" role="navigation" aria-label="Navegación principal">
     <nav class="nav-container">
-      <a href="index.html" class="nav-logo" aria-label="Mi Proyecto DT - Inicio">
-        <span class="logo-icon" aria-hidden="true">🎮</span>
-        <span class="logo-text">Mi Proyecto DT</span>
+      <a href="index.html" class="nav-logo" aria-label="Lisoran - Inicio">
+        <span class="logo-icon" aria-hidden="true">🌸</span>
+        <span class="logo-text">Lisoran</span>
       </a>
-
-      <ul class="nav-menu" id="navMenu" role="menubar">
-        <li role="none"><a href="index.html" class="nav-link" role="menuitem">Inicio</a></li>
-        <li role="none"><a href="about-us.html" class="nav-link" role="menuitem">Nosotros</a></li>
-        <li role="none"><a href="services.html" class="nav-link active" role="menuitem" aria-current="page">Servicios</a></li>
-        <li role="none"><a href="contact.html" class="nav-link" role="menuitem">Contacto</a></li>
-      </ul>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
-        <span class="hamburger" aria-hidden="true"></span>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="about-us.html" class="nav-link">Nosotros</a>
+        <a href="services.html" class="nav-link active">Servicios</a>
+        <a href="contact.html" class="nav-link">Contacto</a>
+      </div>
+      <button class="mobile-menu-toggle" id="navToggle" aria-expanded="false" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
       </button>
     </nav>
   </header>
 
-  <main>
-    <section class="services-hero">
-      <div class="services-hero-content">
-        <h1>Servicios para <span style="color: #ff6b6b;">desarrolladores otaku</span></h1>
-        <p>Transformamos la pasión por el anime en conocimiento técnico aplicable. Desde análisis profundos hasta frameworks de productividad inspirados en tus series favoritas.</p>
+<main>
+    <!-- Hero Section -->
+    <section class="section hero-section" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-badge brand-sor">Sor Tech</div>
+          <h1 id="services-title" class="section-title">Nuestros Servicios</h1>
+          <p class="section-description">
+            Tecnología innovadora para el futuro. Plataforma cloud, herramientas 
+            para desarrolladores y soluciones AI con estética anime pink.
+          </p>
+        </header>
       </div>
     </section>
+    <!-- Sor Cloud Section -->
+    <section class="section sor-cloud" id="sor-cloud" aria-labelledby="cloud-title">
+      <div class="container">
+        <div class="service-grid">
+          <article class="service-card sor-card">
+            <div class="card-icon">☁️</div>
+            <h3 class="card-title">Sor Cloud</h3>
+            <p class="card-description">
+              Almacenamiento seguro y escalable. 
+              <span class="tech-badge">Deploy instantáneo</span>
+            </p>
+            <a href="contact.html" class="btn-anime btn-anime-primary btn-brand">
+              <span>Solicitar Demo</span>
+            </a>
+          </article>
 
-    <section class="services-content">
-      <div class="services-intro">
-        <h2>Explora nuestras categorías</h2>
-        <p>Cada servicio está diseñado con rigor técnico y amor por el medio. Filtra por categoría o explora todo.</p>
-      </div>
+          <article class="service-card sor-card">
+            <div class="card-icon">⚡</div>
+            <h3 class="card-title">API Gateway</h3>
+            <p class="card-description">
+              Gestión centralizada de APIs. 
+              <span class="tech-badge">Rate limit 100K</span>
+            </p>
+            <a href="contact.html" class="btn-anime btn-anime-primary btn-brand">
+              <span>Ver Documentación</span>
+            </a>
+          </article>
 
-      <div class="services-categories">
-        <button class="category-btn active" data-category="all" aria-pressed="true">Todos</button>
-        <button class="category-btn" data-category="articles" aria-pressed="false">Artículos Técnicos</button>
-        <button class="category-btn" data-category="analysis" aria-pressed="false">Análisis Personajes</button>
-        <button class="category-btn" data-category="productivity" aria-pressed="false">Productividad</button>
-        <button class="category-btn" data-category="community" aria-pressed="false">Comunidad</button>
-      </div>
-
-      <div class="services-grid" id="servicesGrid">
-        <!-- Artículos Técnicos -->
-        <article class="service-card" data-category="articles">
-          <div class="service-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-              <polyline points="14 2 14 8 20 8"></polyline>
-              <line x1="16" y1="13" x2="8" y2="13"></line>
-              <line x1="16" y1="17" x2="8" y2="17"></line>
-              <polyline points="10 9 9 9 8 9"></polyline>
-            </svg>
-          </div>
-          <span class="service-category">Artículos Técnicos</span>
-          <h3>Deep Dives: Anime & Code</h3>
-          <p class="service-desc">Artículos técnicos profundos que exploran paralelos entre conceptos de programación y narrativas de anime. Desde sistemas de tipos inspirados en Nen (Hunter x Hunter) hasta patrones de diseño basados en Stands (JoJo).</p>
-          <ul class="service-features">
-            <li>Publicación quincenal</li>
-            <li>Código de ejemplo incluido</li>
-            <li>Referencias académicas</li>
-          </ul>
-          <a href="#" class="service-btn">Ver artículos <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a>
-        </article>
-
-        <article class="service-card" data-category="articles">
-          <div class="service-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-              <rect x="2" y="3" width="20" height="14" rx="2"></rect>
-              <path d="M8 21h8M12 17v4"></path>
-            </svg>
-          </div>
-          <span class="service-category">Artículos Técnicos</span>
-          <h3>Tech Stack Reviews</h3>
-          <p class="service-desc">Análisis de tecnologías modernas (Rust, Go, TypeScript, Kubernetes) vistos a través de la lente de "power systems" de anime. ¿Es Rust el equivalente a aprender Haki? ¿Kubernetes es tu propio sistema de clones de sombra?</p>
-          <ul class="service-features">
-            <li>Benchmarks reales</li>
-            <li>Curva de aprendizaje visualizada</li>
-            <li>Casos de uso industriales</li>
-          </ul>
-          <a href="#" class="service-btn">Ver reviews <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a>
-        </article>
-
-        <!-- Análisis Personajes -->
-        <article class="service-card" data-category="analysis">
-          <div class="service-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-              <circle cx="12" cy="8" r="4"></circle>
-              <path d="M12 14c-3 0-6 2-6 5v2h12v-2c0-3-3-5-6-5z"></path>
-            </svg>
-          </div>
-          <span class="service-category">Análisis Personajes</span>
-          <h3>Character Architecture</h3>
-          <p class="service-desc">Desglose técnico de protagonistas como si fueran arquitecturas de software. Analizamos motivaciones como "requirements", arcos de redención como "refactoring", y power-ups como "feature flags".</p>
-          <ul class="service-features">
-            <li>Diagramas de arquitectura</li>
-            <li>Análisis de complejidad emocional</li>
-            <li>Comparativa cross-series</li>
-          </ul>
-          <a href="#" class="service-btn">Ver análisis <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a>
-        </article>
-
-        <article class="service-card" data-category="analysis">
-          <div class="service-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-              <line x1="12" y1="22.08" x2="12" y2="12"></line>
-            </svg>
-          </div>
-          <span class="service-category">Análisis Personajes</span>
-          <h3>Power System Breakdown</h3>
-          <p class="service-desc">Formalización matemática de sistemas de poder (Nen, Chakra, Haki, Cursed Energy, Quirks). Definimos reglas, limitaciones y escalabilidad como si documentáramos una API.</p>
-          <ul class="service-features">
-            <li>Especificación tipo OpenAPI</li>
-            <li>Árboles de decisión</li>
-            <li>Simuladores interactivos</li>
-          </ul>
-          <a href="#" class="service-btn">Ver sistemas <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a>
-        </article>
-
-        <!-- Productividad -->
-        <article class="service-card" data-category="productivity">
-          <div class="service-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-              <circle cx="12" cy="12" r="10"></circle>
-              <polyline points="12 6 12 12 16 14"></polyline>
-            </svg>
-          </div>
-          <span class="service-category">Productividad</span>
-          <h3>Shonen Sprint Framework</h3>
-          <p class="service-desc">Framework de productividad basado en arcos de entrenamiento shonen. Fases: "Entrenamiento en la habitación del tiempo" (deep work), "Tournament arc" (sprints públicos), "Power-up" (review y retrospectiva).</p>
-          <ul class="service-features">
-            <li>Plantillas Notion/Obsidian</li>
-            <li>Métricas de "nivel de poder"</li>
-            <li>Sistema de recompensas gamificado</li>
-          </ul>
-          <a href="#" class="service-btn">Descargar <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"></path></svg></a>
-        </article>
-
-        <article class="service-card" data-category="productivity">
-          <div class="service-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-              <circle cx="9" cy="7" r="4"></circle>
-              <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path>
-            </svg>
-          </div>
-          <span class="service-category">Productividad</span>
-          <h3>Mentoría 1:1 "Senpai-Kohai"</h3>
-          <p class="service-desc">Sesiones personalizadas de arquitectura de software, revisión de código y carrera tech. Estilo senpai-kohai: guía honesta, código limpio, sin gatekeeping. Para juniors y mid-level que quieren subir de nivel.</p>
-          <ul class="service-features">
-            <li>Code review en vivo</li>
-            <li>Plan de carrera 6 meses</li>
-            <li>Acceso a comunidad privada</li>
-          </ul>
-          <a href="#" class="service-btn">Agendar <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a>
-        </article>
-
-        <!-- Comunidad -->
-        <article class="service-card" data-category="community">
-          <div class="service-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-              <circle cx="9" cy="7" r="4"></circle>
-              <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path>
-            </svg>
-          </div>
-          <span class="service-category">Comunidad</span>
-          <h3>Discord "Guild Hall"</h3>
-          <p class="service-desc">Comunidad activa de devs otaku. Canales por lenguaje, #code-review, #anime-discussion, #project-showcase, eventos semanales: "Mob Programming Mondays", "Architecture Fridays", "Weekend Watch Parties".</p>
-          <ul class="service-features">
-            <li>5000+ miembros activos</li>
-            <li>Eventos semanales en vivo</li>
-            <li>Biblioteca de recursos curada</li>
-          </ul>
-          <a href="#" class="service-btn">Unirse <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a>
-        </article>
-
-        <article class="service-card" data-category="community">
-          <div class="service-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-              <rect x="2" y="3" width="20" height="14" rx="2"></rect>
-              <path d="M8 21h8M12 17v4"></path>
-            </svg>
-          </div>
-          <span class="service-category">Comunidad</span>
-          <h3>Newsletter "Weekly Shonen Dev"</h3>
-          <p class="service-desc">Newsletter semanal curada: 1 artículo técnico profundo, 1 análisis de personaje, 1 tip de productividad, 1 fragmento de código comentado, y 1 recomendación de anime para devs. Sin spam, solo valor.</p>
-          <ul class="service-features">
-            <li>5000+ suscriptores</li>
-            <li>Open rate 42%</li>
-            <li>Archivo completo accesible</li>
-          </ul>
-          <a href="#" class="service-btn">Suscribirse <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a>
-        </article>
-      </div>
-    </section>
-
-    <section class="why-choose">
-      <h2>Por qué elegirnos</h2>
-      <div class="why-grid">
-        <article class="why-card">
-          <div class="why-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-            </svg>
-          </div>
-          <h3>Rigor Técnico Real</h3>
-          <p>No hacemos analogías superficiales. Cada artículo pasa por validación de código real, benchmarks y revisión por ingenieros senior.</p>
-        </article>
-        <article class="why-card">
-          <div class="why-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-              <line x1="12" y1="22.08" x2="12" y2="12"></line>
-            </svg>
-          </div>
-          <h3>Fidelidad al Canon</h3>
-          <p>Respetamos el material original. Citas de manga, databooks, entrevistas al autor. Nada de headcanon — solo lo que está en la página/episodio.</p>
-        </article>
-        <article class="why-card">
-          <div class="why-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <circle cx="12" cy="12" r="10"></circle>
-              <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
-              <line x1="9" y1="9" x2="9.01" y2="9"></line>
-              <line x1="15" y1="9" x2="15.01" y2="9"></line>
-            </svg>
-          </div>
-          <h3>Comunidad Primero</h3>
-          <p>Construimos para y con la comunidad. Feedback en Discord, votaciones de temas, código abierto, eventos gratuitos. Tu voz define el roadmap.</p>
-        </article>
-        <article class="why-card">
-          <div class="why-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <polyline points="23 4 23 10 17 10"></polyline>
-              <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
-            </svg>
-          </div>
-          <h3>Contenido Vivo</h3>
-          <p>Actualizamos cuando salen nuevos capítulos/episodios que cambian el análisis. Repos versionados, changelogs públicos, contenido que evoluciona con la serie.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="services-cta">
-      <div class="cta-card">
-        <div class="cta-content">
-          <h2>¿Tienes una idea para un análisis?</h2>
-          <p>Proponenos tu personaje, sistema de poder o concepto favorito. Si gana la votación comunitaria, lo desarrollamos gratis.</p>
-          <a href="contact.html" class="btn-cta">Proponer tema <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a>
+          <article class="service-card sor-card">
+            <div class="card-icon">🔒</div>
+            <h3 class="card-title">Cifrado Sor</h3>
+            <p class="card-description">
+              Protección de datos con AES-256. 
+              <span class="tech-badge">Zero knowledge</span>
+            </p>
+            <a href="contact.html" class="btn-anime btn-anime-primary btn-brand">
+              <span>Consultar Seguridad</span>
+            </a>
+          </article>
         </div>
-        <div class="cta-visual" aria-hidden="true">
-          <svg width="120" height="120" viewBox="0 0 100 100" fill="none">
-            <circle cx="50" cy="50" r="45" stroke="url(#ctaGradient)" stroke-width="3" stroke-dasharray="283" stroke-dashoffset="0" style="animation: dash 3s linear infinite;">
-              <animate attributeName="stroke-dashoffset" from="283" to="0" dur="3s" repeatCount="indefinite" />
-            </circle>
-            <defs>
-              <linearGradient id="ctaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#ff6b6b" />
-                <stop offset="100%" stop-color="#ffd93d" />
-              </linearGradient>
-            </defs>
-            <text x="50" y="55" text-anchor="middle" font-size="40">💡</text>
-          </svg>
+      </div>
+    </section>
+
+    <!-- DevTools Section -->
+    <section class="section sor-devtools" id="sor-devtools" aria-labelledby="devtools-title">
+      <div class="container">
+        <header class="section-header">
+          <h3 id="devtools-title" class="section-subtitle">Para Desenvolvedores</h3>
+        </header>
+        <div class="devtools-grid">
+          <div class="devtool-item">
+            <div class="devtool-icon">🛠️</div>
+            <h4>Sor CLI</h4>
+            <p>Terminal interactiva para gestión de recursos.</p>
+          </div>
+          <div class="devtool-item">
+            <div class="devtool-icon">📊</div>
+            <h4>Monitor Sor</h4>
+            <p>Gráficos en tiempo real de performance.</p>
+          </div>
+          <div class="devtool-item">
+            <div class="devtool-icon">🧩</div>
+            <h4>Plugin Framework</h4>
+            <p>Extensible con plugins comunitarios.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sor AI Section -->
+    <section class="section sor-ai" id="sor-ai" aria-labelledby="ai-title">
+      <div class="container">
+        <header class="section-header">
+          <h3 id="ai-title" class="section-subtitle">Inteligencia Artificial</h3>
+        </header>
+        <div class="ai-grid">
+          <article class="feature-card sor-card">
+            <div class="card-icon">🤖</div>
+            <h3 class="card-title">Sor Predict</h3>
+            <p class="card-description">
+              Predicciones de mercado con machine learning. 
+              <span class="tech-badge">ML Model v2.0</span>
+            </p>
+            <a href="contact.html" class="btn-anime btn-anime-primary btn-brand">
+              <span>Acceder API</span>
+            </a>
+          </article>
+
+          <article class="feature-card sor-card">
+            <div class="card-icon">🎨</div>
+            <h3 class="card-title">Sor Vision</h3>
+            <p class="card-description">
+              Procesamiento de imágenes con IA generativa. 
+              <span class="tech-badge">Anime style</span>
+            </p>
+            <a href="contact.html" class="btn-anime btn-anime-primary btn-brand">
+              <span>Probar Demo</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Terminal Section -->
+    <section class="section terminal-section" aria-labelledby="terminal-title">
+      <div class="container">
+        <header class="section-header">
+          <h3 id="terminal-title" class="section-subtitle">Live Demo</h3>
+        </header>
+        <div class="terminal-container sor-terminal">
+          <div class="terminal-line">
+            <span class="terminal-prompt">$</span>
+            <span class="terminal-text">sor login --demo</span>
+          </div>
+          <div class="terminal-line">
+            <span class="terminal-prompt">$</span>
+            <span class="terminal-typing">Sor Tech: Innovation driven by passion...</span>
+          </div>
+          <div class="terminal-line">
+            <span class="terminal-prompt">$</span>
+            <span class="terminal-text">deploy app --env=prod</span>
+          </div>
+          <div class="terminal-line">
+            <span class="terminal-prompt">$</span>
+            <span class="terminal-text">✨ Deploy successful! 🚀</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-content">
+          <div class="cta-badge brand-sor">Potencia tu negocio</div>
+          <h2 id="cta-title" class="cta-title">Impulsa tu tecnología</h2>
+          <p class="cta-description">
+            Contacta con nosotros para una demo personalizada de Sor Cloud, 
+            DevTools o IA.
+          </p>
+          <a href="contact.html" class="btn-anime btn-anime-primary btn-brand">
+            <span>Agendar Consulta</span>
+          </a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-brand">
-        <span class="logo-icon" aria-hidden="true">🎮</span>
-        <span class="logo-text">Mi Proyecto DT</span>
-        <p>Donde el anime y la programación se unen</p>
+  <!-- Global Audio Element & Music Player Widget -->
+  <audio id="bgAudio" preload="auto">
+    <source src="sor-ambient.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div class="music-selector collapsed" id="musicSelector" aria-label="Reproductor de música Sor">
+    <div class="music-header">
+      <div class="music-title">
+        <span>💻</span>
+        <span>Sor Tech Sounds</span>
       </div>
-      <div class="footer-links">
+      <button class="play-pause" id="musicToggleBtn" aria-expanded="false" aria-label="Toggle playlist">💻</button>
+    </div>
+    <div class="music-current">
+      <div class="music-current-info">
+        <div class="music-current-title" id="currentTrackTitle">Synthwave Theme</div>
+        <div class="music-current-artist" id="currentTrackArtist">Sor Tech OST</div>
+      </div>
+      <div class="volume-control">
+        <label for="volumeSlider" class="sr-only">Volumen</label>
+        <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="0.8" aria-label="Control de volumen">
+        <span class="volume-value">80%</span>
+      </div>
+    </div>
+    <div class="music-playlist" id="musicPlaylist"></div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="logo-text">🌸 Sor Tech</div>
+          <p>Brazo tecnológico de Lisoran Group. Innovación con estética anime pink.</p>
+          <div class="footer-brands">
+            <span class="footer-brand-tag brand-sor">Sor Tech</span>
+            <span class="footer-brand-tag brand-loran">Loran Café & Ropa</span>
+          </div>
+        </div>
         <div class="footer-col">
           <h4>Navegación</h4>
           <ul>
@@ -300,257 +244,30 @@
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Legal</h4>
+          <h4>Servicios</h4>
           <ul>
-            <li><a href="#">Política de privacidad</a></li>
-            <li><a href="#">Términos de uso</a></li>
-            <li><a href="#">Cookies</a></li>
+            <li><a href="#sor-cloud">☁️ Sor Cloud</a></li>
+            <li><a href="#sor-devtools">🛠️ DevTools</a></li>
+            <li><a href="#sor-ai">🤖 Sor AI</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Contacto</h4>
           <ul>
-            <li><a href="mailto:hola@miproyectodt.com">hola@miproyectodt.com</a></li>
-            <li><a href="mailto:colaboraciones@miproyectodt.com">colaboraciones@miproyectodt.com</a></li>
+            <li><a href="contact.html">Formulario Unificado</a></li>
+            <li><a href="#">Soporte Sor</a></li>
+            <li><a href="#">Documentación</a></li>
           </ul>
         </div>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 Mi Proyecto DT. Todos los derechos reservados.</p>
-      <p class="footer-made">Hecho con ❤️ y mucho café ☕</p>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lisoran Group. Todos los derechos reservados. Hecho con 🌸 estética Anime Pink.</p>
+      </div>
     </div>
   </footer>
 
-  <!-- Music Selector -->
-  <div class="music-selector" id="musicSelector" role="region" aria-label="Reproductor de música">
-    <div class="music-header">
-      <div class="music-info">
-        <svg class="music-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-          <path d="M9 18V5l12-2v13"></path>
-          <circle cx="6" cy="18" r="3"></circle>
-          <circle cx="18" cy="16" r="3"></circle>
-        </svg>
-        <span class="music-title">Banda sonora</span>
-      </div>
-      <button class="music-toggle" id="musicToggle" aria-label="Expandir/colapsar reproductor" aria-expanded="false">
-        <svg class="expand-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-          <polyline points="5 15 12 22 19 15"></polyline>
-        </svg>
-      </button>
-    </div>
-    <div class="music-playlist">
-      <div class="music-track active" data-src="mambo.mp3.mp3" data-title="Mambo Theme">
-        <div class="track-info">
-          <span class="track-number">1</span>
-          <svg class="track-play-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <polygon points="5 3 19 12 5 21 5 3"></polygon>
-          </svg>
-          <span class="track-title">Mambo Theme</span>
-          <span class="track-duration">3:42</span>
-        </div>
-      </div>
-      <div class="music-track" data-src="mambo.mp3.mp3" data-title="Mambo Theme (Loop)">
-        <div class="track-info">
-          <span class="track-number">2</span>
-          <svg class="track-play-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <polygon points="5 3 19 12 5 21 5 3"></polygon>
-          </svg>
-          <span class="track-title">Mambo Theme (Loop)</span>
-          <span class="track-duration">3:42</span>
-        </div>
-      </div>
-      <div class="music-track" data-src="mambo.mp3.mp3" data-title="Mambo Theme (Extended)">
-        <div class="track-info">
-          <span class="track-number">3</span>
-          <svg class="track-play-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <polygon points="5 3 19 12 5 21 5 3"></polygon>
-          </svg>
-          <span class="track-title">Mambo Theme (Extended)</span>
-          <span class="track-duration">3:42</span>
-        </div>
-      </div>
-      <div class="music-track" data-src="mambo.mp3.mp3" data-title="Mambo Theme (Remix)">
-        <div class="track-info">
-          <span class="track-number">4</span>
-          <svg class="track-play-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <polygon points="5 3 19 12 5 21 5 3"></polygon>
-          </svg>
-          <span class="track-title">Mambo Theme (Remix)</span>
-          <span class="track-duration">3:42</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <audio id="background-music" loop preload="metadata">
-    <source src="mambo.mp3.mp3" type="audio/mpeg">
-  </audio>
-
-  <script>
-    // Music Selector Logic
-    (function() {
-      const audio = document.getElementById('background-music');
-      const selector = document.getElementById('musicSelector');
-      const toggleBtn = document.getElementById('musicToggle');
-      const tracks = document.querySelectorAll('.music-track');
-      let isPlaying = false;
-      let currentTrack = null;
-
-      // Try to play on load (will be caught if autoplay blocked)
-      function attemptAutoplay() {
-        const playPromise = audio.play();
-        if (playPromise !== undefined) {
-          playPromise.then(() => {
-            isPlaying = true;
-            updatePlayState();
-            console.log('Music started playing automatically');
-          }).catch(() => {
-            console.log('Autoplay prevented, waiting for user interaction...');
-            setupInteractionListener();
-          });
-        }
-      }
-
-      function setupInteractionListener() {
-        function playOnInteraction() {
-          audio.play().catch(e => console.log('Playback failed:', e));
-          document.removeEventListener('click', playOnInteraction);
-          document.removeEventListener('keydown', playOnInteraction);
-          document.removeEventListener('touchstart', playOnInteraction);
-        }
-        document.addEventListener('click', playOnInteraction);
-        document.addEventListener('keydown', playOnInteraction);
-        document.addEventListener('touchstart', playOnInteraction);
-      }
-
-      // Toggle playlist visibility
-      toggleBtn.addEventListener('click', () => {
-        selector.classList.toggle('collapsed');
-        const expanded = !selector.classList.contains('collapsed');
-        toggleBtn.setAttribute('aria-expanded', expanded);
-      });
-
-      // Track selection
-      tracks.forEach(track => {
-        track.addEventListener('click', () => {
-          const src = track.dataset.src;
-          const title = track.dataset.title;
-          
-          // Update active state
-          tracks.forEach(t => t.classList.remove('active'));
-          track.classList.add('active');
-          
-          // Change audio source
-          audio.src = src;
-          audio.load();
-          
-          // Play new track
-          audio.play().then(() => {
-            isPlaying = true;
-            currentTrack = track;
-            updatePlayState();
-          }).catch(e => console.log('Playback failed:', e));
-        });
-      });
-
-      // Update play/pause icons
-      function updatePlayState() {
-        const playIcon = currentTrack ? currentTrack.querySelector('.track-play-icon') : null;
-        if (playIcon) {
-          if (isPlaying) {
-            playIcon.innerHTML = '<rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect>';
-          } else {
-            playIcon.innerHTML = '<polygon points="5 3 19 12 5 21 5 3"></polygon>';
-          }
-        }
-      }
-
-      // Audio events
-      audio.addEventListener('play', () => { isPlaying = true; updatePlayState(); });
-      audio.addEventListener('pause', () => { isPlaying = false; updatePlayState(); });
-      audio.addEventListener('ended', () => {
-        isPlaying = false;
-        updatePlayState();
-        // Could add auto-play next track here
-      });
-
-      // Set initial volume
-      audio.volume = 0.3;
-
-      // Initialize
-      attemptAutoplay();
-    })();
-
-    // Mobile menu toggle
-    const navToggle = document.getElementById('navToggle');
-    const navMenu = document.getElementById('navMenu');
-    navToggle.addEventListener('click', () => {
-      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
-      navToggle.setAttribute('aria-expanded', !expanded);
-      navMenu.classList.toggle('nav-menu--open');
-    });
-
-    // Close menu on link click
-    navMenu.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        navToggle.setAttribute('aria-expanded', 'false');
-        navMenu.classList.remove('nav-menu--open');
-      });
-    });
-
-    // Category tabs filtering
-    const tabBtns = document.querySelectorAll('.category-btn');
-    const serviceCards = document.querySelectorAll('.service-card');
-
-    tabBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const category = btn.dataset.category;
-
-        // Update active tab
-        tabBtns.forEach(b => {
-          b.classList.remove('active');
-          b.setAttribute('aria-pressed', 'false');
-        });
-        btn.classList.add('active');
-        btn.setAttribute('aria-pressed', 'true');
-
-        // Filter cards with animation
-        serviceCards.forEach((card, index) => {
-          const cardCategory = card.dataset.category;
-          const shouldShow = category === 'all' || cardCategory === category;
-
-          if (shouldShow) {
-            card.style.display = 'grid';
-            card.style.animation = `fadeInUp 0.4s ease ${index * 0.05}s both`;
-          } else {
-            card.style.animation = 'fadeOut 0.2s ease both';
-            setTimeout(() => {
-              card.style.display = 'none';
-            }, 200);
-          }
-        });
-      });
-    });
-
-    // Intersection Observer for scroll animations
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, observerOptions);
-
-    document.querySelectorAll('.service-card, .why-card, .cta-card').forEach(el => {
-      observer.observe(el);
-    });
-  </script>
+  <!-- External JavaScript -->
+  <script src="js/script.js"></script>
 </body>
 
 </html>

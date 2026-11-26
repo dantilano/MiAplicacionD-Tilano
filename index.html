@@ -1,501 +1,182 @@
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="es" data-theme="dark">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="Mi Proyecto DT - A unique digital concept fusing anime culture with software development." />
-  <title>|</title>
-
+    content="Lisoran - Empresa matriz con dos ramas: Sor (Tecnología) y Loran (Cafetería & Ropa). Innovación, estilo y café con estética anime pink." />
+  <meta name="keywords" content="Lisoran, Sor, Loran, tecnología, cafetería, ropa, anime pink, innovación" />
+  <title>Lisoran | Matriz • Sor Tech • Loran Café & Ropa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <script>
-    // Mobile navigation toggle
-    const navToggle = document.querySelector('.nav-toggle');
-    const navMenu = document.querySelector('.nav-menu');
-
-    if (navToggle && navMenu) {
-      navToggle.addEventListener('click', () => {
-        const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
-        navToggle.setAttribute('aria-expanded', !isExpanded);
-        navMenu.classList.toggle('nav-menu--open');
-      });
-
-      // Close menu when clicking a link
-      navMenu.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', () => {
-          navMenu.classList.remove('nav-menu--open');
-          navToggle.setAttribute('aria-expanded', 'false');
-        });
-      });
-    }
-
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        const targetId = this.getAttribute('href');
-        if (targetId === '#') return;
-        const target = document.querySelector(targetId);
-        if (target) {
-          e.preventDefault();
-          const navHeight = document.querySelector('.navigation-bar').offsetHeight;
-          const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
-          window.scrollTo({ top: targetPosition, behavior: 'smooth' });
-        }
-      });
-    });
-  </script>
-  <header class="navigation-bar">
-    <nav class="nav-container">
-      <a href="index.html" class="nav-logo" aria-label="Mi Proyecto DT - Home">
-        <span class="logo-icon">🎮</span>
-        <span class="logo-text">Mi Proyecto DT</span>
+  <header class="navigation-bar" role="navigation" aria-label="Navegación principal">
+    <nav class="container">
+      <a href="index.html" class="nav-logo" aria-label="Lisoran - Inicio">
+        <span class="logo-icon" aria-hidden="true">🌸</span>
+        <span class="logo-text">Lisoran</span>
       </a>
-      <ul class="nav-menu" id="navMenu" role="menubar">
-        <li role="none"><a href="index.html" class="nav-link active" role="menuitem" aria-current="page">Inicio</a></li>
-        <li role="none"><a href="about-us.html" class="nav-link" role="menuitem">Nosotros</a></li>
-        <li role="none"><a href="services.html" class="nav-link" role="menuitem">Servicios</a></li>
-        <li role="none"><a href="contact.html" class="nav-link" role="menuitem">Contacto</a></li>
-      </ul>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false"
-        aria-controls="navMenu">
-        <span class="hamburger" aria-hidden="true"></span>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link active">Inicio</a>
+        <a href="about-us.html" class="nav-link">Nosotros</a>
+        <a href="services.html" class="nav-link">Servicios</a>
+        <a href="contact.html" class="nav-link">Contacto</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-label="Abrir menú">
+        <span class="hamburger"></span>
       </button>
     </nav>
   </header>
 
-  <!-- CSS-based Marquee (replaces deprecated <marquee> tag) -->
-  <div class="marquee-container">
-    <div class="marquee-track">
-      <h1 class="marquee-content"><img src="https://i.redd.it/ffrd164h0qsh1.gif" alt="Descripción" width="80"
-          height="40" />HELLO WORLD!, THIS IS MY FIRST APPLICATION (PRETEND THERE IS JAZZ MUSIC PLAYING)</h1>
-    </div>
-  </div>
-
-  <div class="contenedor">
-    <div class="wrap">
-      <div class="box">
-        <span>SE PARTE DE NUESTRA COMUNIDAD</span>
-        <h1>UN LUGAR DONDE LOS ANIMES Y LA PROGRAMACION SE UNEN</h1>
-        <p>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Dolorem dolore ea aut fugit officiis nesciunt
-          nulla, voluptate perferendis maiores!</p>
-        <div class="botones">
-          <a href="services.html" class="btn1">Suscríbete</a>
-          <a href="about-us.html" class="btn2">Escúchalo</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <main>
-    <section id="about" class="project-section">
-      <h2>About the project</h2>
-      <p>This project explores the creative intersection between the anime universe, software development, and
-        everyday
-        life. By drawing unique parallels, we demonstrate how shonen-style arcs of self-improvement, complex power
-        systems, and the daily routines of anime characters reflect the real-world challenges, logic, and resilience
-        found in a programmer's career.</p>
-
-      <h3>Project Description</h3>
-      <p>The project is an interactive, community-driven web platform designed for software developers, tech students,
-        and anime enthusiasts. The website features deep-dive articles, technical character analyses (e.g., how an
-        anime
-        training arc mirrors mastering a new framework), and productivity tips inspired by popular series. It aims to
-        demystify programming, humanize the tech lifestyle, and bridge the gap between geek culture and clean code.
-      </p>
-
-      <h3>Project Overview</h3>
-      <p><strong>Mission:</strong> To connect a passion for anime with the craft of coding, creating a space where
-        developers can learn, share, and grow through the lens of their favorite stories.</p>
-
-      <h3>Core Topics</h3>
-      <ul>
-        <li>• Shonen Arcs & Dev Growth: Mapping training arcs, tournament arcs, and power-ups to learning curves,
-          hackathons, and career milestones.</li>
-        <li>• Power Systems as Architectures: Breaking down anime magic systems (Chakra, Nen, Alchemy) as metaphors
-          for
-          software architectures and design patterns.</li>
-        <li>• Slice of Life: Practical advice on mental health, ergonomics, work-life balance, and surviving corporate
-          burnout.</li>
-      </ul>
-
-      <h3>Project Summary</h3>
-      <p>A unique digital concept fusing anime culture with the software development ecosystem. Inspired by the
-        resilience and discipline found in Japanese animation, this project translates complex programming concepts
-        and
-        tech-industry dynamics into relatable, engaging narratives—proving that behind every great line of code, there
-        is a developer following their own "ninja way."</p>
-
-      <img src="img/shonen_aniversario.jpg" alt="Shonen Anniversary" class="project-image" />
-    </section>
-
-    <!-- Hero Banner / CTA Section -->
-    <section class="hero-banner">
+    <section class="hero" id="inicio">
       <div class="hero-content">
-        <div class="hero-badge">
-          <span class="badge-icon">✨</span>
-          <span>Nueva temporada disponible</span>
+        <span class="hero-badge">🌸 Lisoran Group</span>
+        <h1 class="gradient-title">Matriz Innovadora<br><span style="font-size: 0.8em;">Sor Tech • Loran Café &
+            Ropa</span></h1>
+        <p>Empresa matriz que une innovación tecnológica con estilo de vida creativo. Dos ramas, una visión: crear
+          experiencias que inspiren.</p>
+        <div class="brand-showcase"
+          style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+          <article class="card-anime lisoran-card"
+            style="flex: 1; min-width: 200px; max-width: 280px; text-align: center;">
+            <div class="card-icon">🌸</div>
+            <h3>Lisoran</h3>
+            <p>Empresa matriz coordinando innovación y lifestyle</p>
+          </article>
+          <article class="card-anime sor-card" style="flex: 1; min-width: 200px; max-width: 280px; text-align: center;">
+            <div class="card-icon">💻</div>
+            <h3>Sor Tech</h3>
+            <p>Plataforma cloud, DevTools y soluciones AI</p>
+          </article>
+          <article class="card-anime loran-card"
+            style="flex: 1; min-width: 200px; max-width: 280px; text-align: center;">
+            <div class="card-icon">☕</div>
+            <h3>Loran</h3>
+            <p>Café de especialidad & ropa con diseño anime</p>
+          </article>
         </div>
-        <h1>Donde el <span class="highlight">anime</span> se encuentra con el <span class="highlight">código</span></h1>
-        <p class="hero-subtitle">Análisis técnicos profundos, frameworks de productividad inspirados en tus series
-          favoritas y una comunidad de desarrolladores otaku.</p>
-        <div class="hero-actions">
-          <a href="services.html" class="btn-primary">
-            <span>Explorar servicios</span>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              aria-hidden="true">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </a>
-          <a href="about-us.html" class="btn-secondary">
-            <span>Conocer más</span>
-          </a>
+        <a href="#features" class="btn-anime btn-anime-primary">Explorar Ramas</a>
+      </div>
+    </section>
+
+    <section class="section brand-section" id="features">
+      <div class="container">
+        <div class="section-title-wrap">
+          <h2>Nuestras Ramas</h2>
+          <p>Cada rama de Lisoran tiene su propia identidad, pero comparten la misma filosofía: innovación con estilo.
+          </p>
         </div>
-        <div class="hero-stats">
-          <div class="stat">
-            <span class="stat-number">50+</span>
-            <span class="stat-label">Artículos técnicos</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number">12</span>
-            <span class="stat-label">Sistemas de poder analizados</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number">3.5k</span>
-            <span class="stat-label">Desarrolladores en la comunidad</span>
-          </div>
+        <div class="grid">
+          <article class="card-anime sor-card reveal">
+            <div class="card-icon">💻</div>
+            <h3>Sor Tech</h3>
+            <p>Desarrollamos plataformas cloud, herramientas para desarrolladores y soluciones de inteligencia
+              artificial. Tecnología que potencia a creadores y empresas.</p>
+            <a href="services.html" class="btn-anime btn-anime-secondary" style="margin-top: 1rem;">Ver Servicios</a>
+          </article>
+          <article class="card-anime loran-card reveal">
+            <div class="card-icon">☕</div>
+            <h3>Loran Café & Ropa</h3>
+            <p>Café de especialidad servido en un espacio con estética anime pink, y una línea de ropa que fusiona
+              cultura otaku con moda urbana.</p>
+            <a href="contact.html" class="btn-anime btn-anime-secondary" style="margin-top: 1rem;">Visítanos</a>
+          </article>
+          <article class="card-anime lisoran-card reveal">
+            <div class="card-icon">🌸</div>
+            <h3>Lisoran Culture</h3>
+            <p>Comunidad creativa donde desarrolladores, baristas, diseñadores y soñadores colaboran. Eventos, workshops
+              y espacios de coworking.</p>
+            <a href="about-us.html" class="btn-anime btn-anime-secondary" style="margin-top: 1rem;">Conócenos</a>
+          </article>
         </div>
       </div>
-      <div class="hero-visual">
-        <div class="floating-cards">
-          <div class="float-card" data-card="1">
-            <div class="card-icon">📚</div>
-            <h4>Deep Dives</h4>
-            <p>Artículos quincenales</p>
-          </div>
-          <div class="float-card" data-card="2">
-            <div class="card-icon">⚔️</div>
-            <h4>Power Systems</h4>
-            <p>APIs formales de anime</p>
-          </div>
-          <div class="float-card" data-card="3">
-            <div class="card-icon">🧠</div>
-            <h4>Character Arch</h4>
-            <p>Análisis de arquitectura</p>
-          </div>
-          <div class="float-card" data-card="4">
+    </section>
+
+    <section class="section brand-section brand-overlay-sor" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-title-wrap">
+          <h2>¿Por qué Lisoran?</h2>
+          <p>No somos una empresa tradicional. Somos un ecosistema donde la tecnología y el lifestyle se alimentan
+            mutuamente.</p>
+        </div>
+        <div class="grid">
+          <div class="card-anime reveal">
             <div class="card-icon">⚡</div>
-            <h4>Productivity</h4>
-            <p>Frameworks inspirados</p>
+            <h3>Sinergia Real</h3>
+            <p>Sor construye las herramientas que Loran usa. Loran inspira la cultura que Sor codifica. Un ciclo
+              virtuoso de innovación.</p>
+          </div>
+          <div class="card-anime reveal">
+            <div class="card-icon">🎨</div>
+            <h3>Estética Anime Pink</h3>
+            <p>Una identidad visual coherente en código, café y ropa. El rosa neón no es solo color — es nuestra firma.
+            </p>
+          </div>
+          <div class="card-anime reveal">
+            <div class="card-icon">🤝</div>
+            <h3>Comunidad Primero</h3>
+            <p>Open source, eventos locales, colaboraciones con artistas. Lisoran existe porque su comunidad la hace
+              posible.</p>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Featured Video Section -->
-    <section class="video-section">
-      <div class="section-header">
-        <h2>Video Destacado</h2>
-        <p>Contenido seleccionado para desarrolladores otaku</p>
-      </div>
-      <div class="video-wrapper">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/z17rrRyMxEc?si=K8dkNf0YtXiVJ2Rc"
-          title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-    </section>
-
-    <!-- Quick Links / Navigation Cards -->
-    <section class="quick-nav">
-      <div class="section-header">
-        <h2>Explora por categoría</h2>
-        <p>Encuentra exactamente lo que buscas</p>
-      </div>
-      <div class="nav-cards">
-        <a href="services.html?category=articles" class="nav-card">
-          <div class="nav-card-icon">📖</div>
-          <h3>Artículos Técnicos</h3>
-          <p>Deep dives quincenales conectando anime y código</p>
-          <span class="nav-card-arrow">→</span>
-        </a>
-        <a href="services.html?category=analysis" class="nav-card">
-          <div class="nav-card-icon">🔬</div>
-          <h3>Análisis de Personajes</h3>
-          <p>Arquitectura de protagonistas como software</p>
-          <span class="nav-card-arrow">→</span>
-        </a>
-        <a href="services.html?category=productivity" class="nav-card">
-          <div class="nav-card-icon">⚙️</div>
-          <h3>Frameworks de Productividad</h3>
-          <p>Sistemas inspirados en anime para devs</p>
-          <span class="nav-card-arrow">→</span>
-        </a>
-        <a href="contact.html" class="nav-card">
-          <div class="nav-card-icon">💬</div>
-          <h3>Contacto & Comunidad</h3>
-          <p>Únete, sugiere temas o colabora con nosotros</p>
-          <span class="nav-card-arrow">→</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- Community Preview -->
-    <section class="community-preview">
-      <div class="community-content">
-        <div class="section-header">
-          <h2>Únete a la comunidad</h2>
-          <p>Comparte, aprende y crece con otros desarrolladores apasionados por el anime</p>
-        </div>
-        <div class="community-features">
-          <div class="community-feature">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              aria-hidden="true">
-              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-              <circle cx="9" cy="7" r="4"></circle>
-              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-            </svg>
-            <h4>Comunidad activa</h4>
-            <p>Discord y foros para discutir artículos y proponer temas</p>
-          </div>
-          <div class="community-feature">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              aria-hidden="true">
-              <polygon points="23 7 16 12 23 17 23 7"></polygon>
-              <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
-            </svg>
-            <h4>Contenido exclusivo</h4>
-            <p>Acceso anticipado a artículos y recursos descargables</p>
-          </div>
-          <div class="community-feature">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              aria-hidden="true">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-            </svg>
-            <h4>Colaboraciones</h4>
-            <p>Escribe artículos, sugiere análisis o ayuda con traducciones</p>
-          </div>
-        </div>
-        <a href="contact.html" class="btn-primary community-cta">
-          <span>Unirme ahora</span>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            aria-hidden="true">
-            <path d="M5 12h14M12 5l7 7-7 7"></path>
-          </svg>
-        </a>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-content">
+  <footer class="footer">
+    <div class="container">
       <div class="footer-brand">
-        <span class="logo-icon">🎮</span>
-        <span class="logo-text">Mi Proyecto DT</span>
+        <div class="logo-text">🌸 Lisoran Group</div>
+        <p>Empresa matriz coordinando innovación (Sor) y lifestyle (Loran)</p>
+        <div class="footer-brands">
+          <span class="footer-brand-tag brand-sor">Sor Tech</span>
+          <span class="footer-brand-tag brand-loran">Loran Café & Ropa</span>
+        </div>
       </div>
-      <p class="footer-tagline">Donde el anime se encuentra con el código</p>
-      <div class="footer-links">
-        <a href="about-us.html">Nosotros</a>
-        <a href="services.html">Servicios</a>
-        <a href="contact.html">Contacto</a>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about-us.html">Nosotros</a></li>
+            <li><a href="services.html">Servicios</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Sor Tech</h4>
+          <ul>
+            <li><a href="services.html#cloud">Cloud Platform</a></li>
+            <li><a href="services.html#devtools">DevTools</a></li>
+            <li><a href="services.html#ai">Soluciones AI</a></li>
+            <li><a href="services.html#consulting">Consultoría</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Loran</h4>
+          <ul>
+            <li><a href="contact.html#cafe">Menú Café</a></li>
+            <li><a href="contact.html#clothing">Colección Ropa</a></li>
+            <li><a href="contact.html#reservations">Reservas</a></li>
+            <li><a href="contact.html#events">Eventos</a></li>
+          </ul>
+        </div>
       </div>
-      <p class="footer-copyright">&copy; 2025 Mi Proyecto DT. Hecho con pasión por desarrolladores otaku.</p>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Lisoran Group. Hecho con 💖 y código.</p>
+      </div>
     </div>
   </footer>
 
-  <!-- Music Selector -->
-  <div class="music-selector" id="musicSelector" role="region" aria-label="Reproductor de música">
-    <div class="music-header">
-      <div class="music-info">
-        <svg class="music-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-          stroke-width="2" aria-hidden="true">
-          <path d="M9 18V5l12-2v13"></path>
-          <circle cx="6" cy="18" r="3"></circle>
-          <circle cx="18" cy="16" r="3"></circle>
-        </svg>
-        <span class="music-title">Banda sonora</span>
-      </div>
-      <button class="music-toggle" id="musicToggle" aria-label="Expandir/colapsar reproductor" aria-expanded="false">
-        <svg class="expand-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-          stroke-width="2" aria-hidden="true">
-          <polyline points="5 15 12 22 19 15"></polyline>
-        </svg>
-      </button>
-    </div>
-    <div class="music-playlist">
-      <div class="music-track active" data-src="mambo.mp3.mp3" data-title="Mambo Theme">
-        <div class="track-info">
-          <span class="track-number">1</span>
-          <svg class="track-play-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
-            aria-hidden="true">
-            <polygon points="5 3 19 12 5 21 5 3"></polygon>
-          </svg>
-          <span class="track-title">Mambo Theme</span>
-          <span class="track-duration">3:42</span>
-        </div>
-      </div>
-      <div class="music-track" data-src="mambo.mp3.mp3" data-title="Mambo Theme (Loop)">
-        <div class="track-info">
-          <span class="track-number">2</span>
-          <svg class="track-play-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
-            aria-hidden="true">
-            <polygon points="5 3 19 12 5 21 5 3"></polygon>
-          </svg>
-          <span class="track-title">Mambo Theme (Loop)</span>
-          <span class="track-duration">3:42</span>
-        </div>
-      </div>
-      <div class="music-track" data-src="mambo.mp3.mp3" data-title="Mambo Theme (Extended)">
-        <div class="track-info">
-          <span class="track-number">3</span>
-          <svg class="track-play-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
-            aria-hidden="true">
-            <polygon points="5 3 19 12 5 21 5 3"></polygon>
-          </svg>
-          <span class="track-title">Mambo Theme (Extended)</span>
-          <span class="track-duration">3:42</span>
-        </div>
-      </div>
-      <div class="music-track" data-src="mambo.mp3.mp3" data-title="Mambo Theme (Remix)">
-        <div class="track-info">
-          <span class="track-number">4</span>
-          <svg class="track-play-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
-            aria-hidden="true">
-            <polygon points="5 3 19 12 5 21 5 3"></polygon>
-          </svg>
-          <span class="track-title">Mambo Theme (Remix)</span>
-          <span class="track-duration">3:42</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <audio id="background-music" loop preload="metadata">
-    <source src="mambo.mp3.mp3" type="audio/mpeg">
-  </audio>
-
-  <script>
-    // Add food to list
-    document.getElementById('addFoodBtn')?.addEventListener('click', function () {
-      const input = document.getElementById('inputField');
-      const food = input?.value.trim();
-      if (food) {
-        const list = document.getElementById('foodList');
-        const li = document.createElement('li');
-        li.textContent = food;
-        list.appendChild(li);
-
-        // Also add to select
-        const select = document.getElementById('selectField');
-        const option = document.createElement('option');
-        option.value = food;
-        option.textContent = food;
-        select.appendChild(option);
-
-        input.value = '';
-      }
-    });
-  </script>
-
-  <script>
-    // Music Selector Logic
-    (function () {
-      const audio = document.getElementById('background-music');
-      const selector = document.getElementById('musicSelector');
-      const toggleBtn = document.getElementById('musicToggle');
-      const tracks = document.querySelectorAll('.music-track');
-      let isPlaying = false;
-      let currentTrack = null;
-
-      // Try to play on load (will be caught if autoplay blocked)
-      function attemptAutoplay() {
-        const playPromise = audio.play();
-        if (playPromise !== undefined) {
-          playPromise.then(() => {
-            isPlaying = true;
-            updatePlayState();
-            console.log('Music started playing automatically');
-          }).catch(() => {
-            console.log('Autoplay prevented, waiting for user interaction...');
-            setupInteractionListener();
-          });
-        }
-      }
-
-      function setupInteractionListener() {
-        function playOnInteraction() {
-          audio.play().catch(e => console.log('Playback failed:', e));
-          document.removeEventListener('click', playOnInteraction);
-          document.removeEventListener('keydown', playOnInteraction);
-          document.removeEventListener('touchstart', playOnInteraction);
-        }
-        document.addEventListener('click', playOnInteraction);
-        document.addEventListener('keydown', playOnInteraction);
-        document.addEventListener('touchstart', playOnInteraction);
-      }
-
-      // Toggle playlist visibility
-      toggleBtn.addEventListener('click', () => {
-        selector.classList.toggle('collapsed');
-        const expanded = !selector.classList.contains('collapsed');
-        toggleBtn.setAttribute('aria-expanded', expanded);
-      });
-
-      // Track selection
-      tracks.forEach(track => {
-        track.addEventListener('click', () => {
-          const src = track.dataset.src;
-          const title = track.dataset.title;
-
-          // Update active state
-          tracks.forEach(t => t.classList.remove('active'));
-          track.classList.add('active');
-
-          // Change audio source
-          audio.src = src;
-          audio.load();
-
-          // Play new track
-          audio.play().then(() => {
-            isPlaying = true;
-            currentTrack = track;
-            updatePlayState();
-          }).catch(e => console.log('Playback failed:', e));
-        });
-      });
-
-      // Update play/pause icons
-      function updatePlayState() {
-        const playIcon = currentTrack ? currentTrack.querySelector('.track-play-icon') : null;
-        if (playIcon) {
-          if (isPlaying) {
-            playIcon.innerHTML = '<rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect>';
-          } else {
-            playIcon.innerHTML = '<polygon points="5 3 19 12 5 21 5 3"></polygon>';
-          }
-        }
-      }
-
-      // Audio events
-      audio.addEventListener('play', () => { isPlaying = true; updatePlayState(); });
-      audio.addEventListener('pause', () => { isPlaying = false; updatePlayState(); });
-      audio.addEventListener('ended', () => {
-        isPlaying = false;
-        updatePlayState();
-        // Could add auto-play next track here
-      });
-
-      // Set initial volume
-      audio.volume = 0.3;
-
-      // Initialize
-      attemptAutoplay();
-    })();
-  </script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

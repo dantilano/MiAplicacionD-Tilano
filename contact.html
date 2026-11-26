@@ -4,520 +4,252 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Contacto - Mi Proyecto DT - Ponte en contacto con nosotros para colaboraciones, proyectos o consultas" />
-  <title>Contacto - Mi Proyecto DT</title>
+  <meta name="description" content="Contacto Lisoran Group - Formulario unificado para Sor Tech y Loran Café. Reservas, consultas y mensajes." />
+  <meta name="keywords" content="Lisoran, Sor, Loran, contacto, formulario, reservas, café, ropa" />
+  <title>Contacto - Lisoran Group</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-
-  <header class="navigation-bar" role="navigation" aria-label="Main navigation">
+  <!-- Navigation Bar -->
+  <header class="navigation-bar" role="navigation" aria-label="Navegación principal">
     <nav class="nav-container">
-      <a href="index.html" class="nav-logo" aria-label="Mi Proyecto DT - Home">
-        <span class="logo-icon" aria-hidden="true">🎮</span>
-        <span class="logo-text">Mi Proyecto DT</span>
+      <a href="index.html" class="nav-logo" aria-label="Lisoran - Inicio">
+        <span class="logo-icon" aria-hidden="true">🌸</span>
+        <span class="logo-text">Lisoran</span>
       </a>
-      <ul class="nav-menu" id="navMenu" role="menubar">
-        <li role="none"><a href="index.html" class="nav-link" role="menuitem">Inicio</a></li>
-        <li role="none"><a href="about-us.html" class="nav-link" role="menuitem">Nosotros</a></li>
-        <li role="none"><a href="services.html" class="nav-link" role="menuitem">Servicios</a></li>
-        <li role="none"><a href="contact.html" class="nav-link active" role="menuitem" aria-current="page">Contacto</a>
-        </li>
-      </ul>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false"
-        aria-controls="navMenu">
-        <span class="hamburger" aria-hidden="true"></span>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="about-us.html" class="nav-link">Nosotros</a>
+        <a href="services.html" class="nav-link">Servicios</a>
+        <a href="contact.html" class="nav-link active">Contacto</a>
+      </div>
+      <button class="mobile-menu-toggle" id="navToggle" aria-expanded="false" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
       </button>
     </nav>
   </header>
 
-  <main>
-    <section class="contact-hero">
-      <div class="contact-hero-content">
-        <span class="contact-hero-tagline">Ponte en contacto</span>
-        <h1>Hablemos sobre<br><span class="contact-hero-highlight">tu próximo proyecto</span></h1>
-        <p class="contact-hero-subtitle">¿Tienes una idea? ¿Quieres colaborar? ¿Solo quieres saludar? Estamos aquí para
-          escucharte.</p>
-      </div>
-    </section>
+<main>
+    <!-- Unified Contact Section -->
+    <section class="section contact-section" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-badge brand-lisoran">Contacto</div>
+          <h1 id="contact-title" class="section-title">Contáctanos</h1>
+          <p class="section-description">
+            Formulario unificado para todas las ramas. Selecciona la rama 
+            para personalizar el mensaje.
+          </p>
+</header>
 
-    <section class="contact-content">
-      <div class="contact-grid">
-        <div class="contact-info">
-          <div class="contact-info-card">
-            <div class="icon-wrapper">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                aria-hidden="true">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
-              </svg>
-            </div>
-            <h3>Email</h3>
-            <p>Respondemos en menos de 24h</p>
-            <a href="mailto:tilanodan@gmail.com" class="contact-info-link">hola@miproyectodt.com</a>
-            <a href="mailto:colaboraciones@miproyectodt.com"
-              class="contact-info-link">colaboraciones@miproyectodt.com</a>
-          </div>
-
-          <div class="contact-info-card">
-            <div class="icon-wrapper">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                aria-hidden="true">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                <circle cx="12" cy="10" r="3"></circle>
-              </svg>
-            </div>
-            <h3>Ubicación</h3>
-            <p>Trabajamos remoto, mundialmente</p>
-            <span class="contact-info-text">Cali, Colombia 🇪🇸</span>
-            <span class="contact-info-text">Disponibles globalmente 🌍</span>
-          </div>
-
-          <div class="contact-info-card">
-            <div class="icon-wrapper">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                aria-hidden="true">
-                <circle cx="12" cy="12" r="10"></circle>
-                <polyline points="12 6 12 12 16 14"></polyline>
-              </svg>
-            </div>
-            <h3>Horario</h3>
-            <p>Lunes - Viernes</p>
-            <span class="contact-info-text">10:00 - 19:00 (CET)</span>
-            <p>Sábados</p>
-            <span class="contact-info-text">11:00 - 15:00 (CET)</span>
-          </div>
-        </div>
-
-        <div class="contact-form-wrapper" id="contactFormWrapper">
-          <h2>Envíanos un mensaje</h2>
-          <p>Completa el formulario y te responderemos lo antes posible</p>
-          <form id="contactForm" novalidate>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name">Nombre completo <span class="required" aria-hidden="true">*</span></label>
-                <input type="text" id="name" name="name" required autocomplete="name" placeholder="Tu nombre">
-                <span class="error-message" aria-live="polite"></span>
-              </div>
-              <div class="form-group">
-                <label for="email">Correo electrónico <span class="required" aria-hidden="true">*</span></label>
-                <input type="email" id="email" name="email" required autocomplete="email" placeholder="tu@email.com">
-                <span class="error-message" aria-live="polite"></span>
-              </div>
-            </div>
-
+<div class="contact-form-container">
+          <form id="unifiedContactForm" class="contact-form" novalidate>
             <div class="form-group">
-              <label for="subject">Asunto <span class="required" aria-hidden="true">*</span></label>
-              <select id="subject" name="subject" required>
-                <option value="">Selecciona un tema</option>
-                <option value="general">Consulta general</option>
-                <option value="collaboration">Colaboración / Partnership</option>
-                <option value="project">Propuesta de proyecto</option>
-                <option value="press">Prensa / Medios</option>
-                <option value="other">Otro</option>
+              <label for="name" class="form-label">Nombre</label>
+              <input type="text" id="name" name="name" placeholder="Juan Pérez" required aria-required="true">
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Correo</label>
+              <input type="email" id="email" name="email" placeholder="juan@example.com" required aria-required="true">
+            </div>
+            <div class="form-group">
+              <label for="service" class="form-label">Rama</label>
+              <select id="service" name="service" required aria-required="true">
+                <option value="" disabled selected>Selecciona una rama</option>
+                <option value="sor">Sor Tech - Consultas Técnicas</option>
+                <option value="loran">Loran Café - Reservas & Ropa</option>
+                <option value="general">Consulta General</option>
               </select>
-              <span class="error-message" aria-live="polite"></span>
-            </div>
-
+</div>
             <div class="form-group">
-              <label for="message">Mensaje <span class="required" aria-hidden="true">*</span></label>
-              <textarea id="message" name="message" required rows="6" placeholder="Cuéntanos en qué podemos ayudarte..."
-                maxlength="2000"></textarea>
-              <div class="char-count">
-                <span id="charCount">0</span>/2000
-              </div>
-              <span class="error-message" aria-live="polite"></span>
+              <label for="message" class="form-label">Mensaje</label>
+              <textarea id="message" name="message" placeholder="¿En qué podemos ayudarte?" required aria-required="true" rows="4"></textarea>
             </div>
-
-            <div class="form-group checkbox-group">
-              <input type="checkbox" id="privacy" name="privacy" required>
-              <label for="privacy">He leído y acepto la <a href="#">política de privacidad</a> <span class="required"
-                  aria-hidden="true">*</span></label>
-              <span class="error-message" aria-live="polite"></span>
+            <div class="form-group form-submit">
+              <button type="submit" class="btn-anime btn-anime-primary btn-brand">
+                <span>Enviar Mensaje</span>
+              </button>
             </div>
-
-            <button type="submit" class="btn-submit" id="submitBtn">
-              <span class="btn-text">Enviar mensaje</span>
-              <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" aria-hidden="true">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </button>
-
-            <p class="form-disclaimer">Tu información está segura con nosotros. No compartimos tus datos con terceros.
-            </p>
+            <div id="contactMessage" class="form-status" role="alert" aria-live="polite"></div>
           </form>
 
-          <div id="formSuccess" class="form-success" hidden>
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              aria-hidden="true">
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-              <polyline points="22 4 12 14.01 9 11.01"></polyline>
-            </svg>
-            <h3>¡Mensaje enviado!</h3>
-            <p>Gracias por contactarnos. Te responderemos en menos de 24 horas.</p>
-            <button type="button" class="btn-secondary" id="sendAnotherBtn">Enviar otro mensaje</button>
+          <div class="brand-selector">
+            <h4>Selecciona Rama</h4>
+            <div class="brand-tabs">
+              <button class="brand-tab active" data-brand="sor">Sor Tech</button>
+              <button class="brand-tab" data-brand="loran">Loran Café</button>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="faq-section">
-      <div class="section-header">
-        <h2>Preguntas frecuentes</h2>
-        <p>Respuestas rápidas a las dudas más comunes</p>
-      </div>
-      <div class="faq-grid">
-        <details class="faq-item">
-          <summary>¿Cuánto tardáis en responder?</summary>
-          <p>Normalmente respondemos en menos de 24 horas laborables. Los fines de semana puede tardar un poco más.</p>
-        </details>
-        <details class="faq-item">
-          <summary>¿Hacéis proyectos a medida?</summary>
-          <p>¡Sí! Nos encantan los retos. Cuéntanos tu idea en el formulario y valoraremos cómo podemos ayudarte.</p>
-        </details>
-        <details class="faq-item">
-          <summary>¿Podemos colaborar si no somos de Colombia?</summary>
-          <p>Absolutamente. Trabajamos de forma 100% remota con clientes de todo el mundo. La distancia no es barrera.
+    <!-- Loran Section (Café & Ropa) -->
+    <section class="section loran-section" id="loran-section" aria-labelledby="loran-title">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-badge brand-loran">Rama Loran</div>
+          <h2 id="loran-title" class="section-title">Café & Lifestyle</h2>
+          <p class="section-description">
+            Descubre nuestra cafetería de especialidad y colección de ropa 
+            con diseño anime pink.
           </p>
-        </details>
-        <details class="faq-item">
-          <summary>¿Qué tecnologías utilizáis?</summary>
-          <p>Nos adaptamos al proyecto. Tenemos experiencia con React, Vue, Node.js, Python, TypeScript, bases de datos
-            SQL/NoSQL, cloud (AWS, GCP, Azure), CI/CD, y más.</p>
-        </details>
-        <details class="faq-item">
-          <summary>¿Ofrecéis mantenimiento tras la entrega?</summary>
-          <p>Sí, ofrecemos planes de mantenimiento y soporte continuos para que tu proyecto siga funcionando
-            perfectamente.</p>
-        </details>
-        <details class="faq-item">
-          <summary>¿Cómo funciona el proceso de trabajo?</summary>
-          <p>1) Discovery call → 2) Propuesta y presupuesto → 3) Kickoff y planificación → 4) Desarrollo iterativo con
-            demos semanales → 5) Entrega y documentación → 6) Soporte post-lanzamiento.</p>
-        </details>
+        </header>
+
+        <div class="loran-grid">
+          <article class="loran-card coffee-item">
+            <div class="card-image">☕</div>
+            <h3 class="card-title">Café Signature</h3>
+            <p class="card-description">
+              Edición anime pink con ilustraciones exclusivas. 
+              Perfecto para programar o disfrutar en nuestra sede.
+            </p>
+            <button class="btn-anime btn-anime-secondary btn-brand" data-reserve>
+              <span>Reservar Mesa</span>
+            </button>
+          </article>
+
+          <article class="loran-card clothing-item">
+            <div class="card-image">👕</div>
+            <h3 class="card-title">Colección "Neon Dreams"</h3>
+            <p class="card-description">
+              Hoodies, camisetas y accesorios con colores vibrantes. 
+              Algodón orgánico, diseño oversize.
+            </p>
+            <a href="contact.html#loran-section" class="btn-anime btn-anime-secondary btn-brand">
+              <span>Ver Colección</span>
+            </a>
+          </article>
+
+          <article class="loran-card action-card">
+            <div class="card-image">📅</div>
+            <h3 class="card-title">Eventos</h3>
+            <p class="card-description">
+              Talleres tech, exposiciones de arte y noches anime. 
+              ¡Únete a nuestra comunidad creativa!
+            </p>
+            <a href="contact.html#loran-section" class="btn-anime btn-anime-secondary btn-brand">
+              <span>Próximos Eventos</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map & Location Section -->
+    <section class="section location-section" aria-labelledby="location-title">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-badge brand-loran">Visítanos</div>
+          <h2 id="location-title" class="section-title">Nuestro Espacio</h2>
+        </header>
+        <div class="location-content">
+          <div class="location-info">
+            <p><strong>Dirección:</strong> Calle Lisoran 123, Ciudad Anime</p>
+            <p><strong>Horario:</strong> Lun-Vie 8:00-20:00 | Sáb 9:00-18:00</p>
+            <p><strong>Teléfono:</strong> +123 456 789</p>
+          </div>
+          <div class="location-map">
+            <div class="map-placeholder" aria-label="Mapa de ubicación">
+              🗺️ Mapa interactivo aquí
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-content">
+          <div class="cta-badge brand-loran">Únete a Loran</div>
+          <h2 id="cta-title" class="cta-title">Vive la experiencia</h2>
+          <p class="cta-description">
+            Ya sea para una reserva de café, una consulta de moda o 
+            contactar con Sor Tech, estamos aquí para servirte.
+          </p>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-brand">
-        <span class="logo-icon">🎮</span>
-        <span class="logo-text">Mi Proyecto DT</span>
+  <!-- Global Audio Element & Music Player Widget -->
+  <audio id="bgAudio" preload="auto">
+    <source src="loran-ambient.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div class="music-selector collapsed" id="musicSelector" aria-label="Reproductor de música Loran">
+    <div class="music-header">
+      <div class="music-title">
+        <span>☕</span>
+        <span>Loran Café Sounds</span>
       </div>
-      <p class="footer-tagline">Donde el anime se encuentra con el código</p>
-      <div class="footer-links">
-        <a href="index.html">Inicio</a>
-        <a href="about-us.html">Nosotros</a>
-        <a href="services.html">Servicios</a>
-        <a href="contact.html">Contacto</a>
+      <button class="play-pause" id="musicToggleBtn" aria-expanded="false" aria-label="Toggle playlist">☕</button>
+    </div>
+    <div class="music-current">
+      <div class="music-current-info">
+        <div class="music-current-title" id="currentTrackTitle">Café Ambient</div>
+        <div class="music-current-artist" id="currentTrackArtist">Loran Café OST</div>
       </div>
-      <p class="footer-copyright">&copy; 2025 Mi Proyecto DT. Hecho con pasión por desarrolladores otaku.</p>
+      <div class="volume-control">
+        <label for="volumeSlider" class="sr-only">Volumen</label>
+        <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="0.8" aria-label="Control de volumen">
+        <span class="volume-value">80%</span>
+      </div>
+    </div>
+    <div class="music-playlist" id="musicPlaylist"></div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="logo-text">🌸 Loran Café & Ropa</div>
+          <p>Brazo creativo de Lisoran Group. Café y estilo con estética anime pink.</p>
+          <div class="footer-brands">
+            <span class="footer-brand-tag brand-sor">Sor Tech</span>
+            <span class="footer-brand-tag brand-loran">Loran Café & Ropa</span>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about-us.html">Nosotros</a></li>
+            <li><a href="services.html">Servicios</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Productos</h4>
+          <ul>
+            <li><a href="#">☕ Café Signature</a></li>
+            <li><a href="#">👕 Colección Neon</a></li>
+            <li><a href="#">📅 Eventos</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="contact.html">Formulario Unificado</a></li>
+            <li><a href="#">Soporte Sor</a></li>
+            <li><a href="#">Reservas Loran</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lisoran Group. Todos los derechos reservados. Hecho con 🌸 estética Anime Pink.</p>
+      </div>
     </div>
   </footer>
 
-  <!-- Music Selector -->
-  <div class="music-selector" id="musicSelector" role="region" aria-label="Reproductor de música">
-    <div class="music-header">
-      <div class="music-info">
-        <svg class="music-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-          stroke-width="2" aria-hidden="true">
-          <path d="M9 18V5l12-2v13"></path>
-          <circle cx="6" cy="18" r="3"></circle>
-          <circle cx="18" cy="16" r="3"></circle>
-        </svg>
-        <span class="music-title">Banda sonora</span>
-      </div>
-      <button class="music-toggle" id="musicToggle" aria-label="Expandir/colapsar reproductor" aria-expanded="false">
-        <svg class="expand-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-          stroke-width="2" aria-hidden="true">
-          <polyline points="5 15 12 22 19 15"></polyline>
-        </svg>
-      </button>
-    </div>
-    <div class="music-playlist">
-      <div class="music-track active" data-src="mambo.mp3.mp3" data-title="Mambo Theme">
-        <div class="track-info">
-          <span class="track-number">1</span>
-          <svg class="track-play-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
-            aria-hidden="true">
-            <polygon points="5 3 19 12 5 21 5 3"></polygon>
-          </svg>
-          <span class="track-title">Mambo Theme</span>
-          <span class="track-duration">3:42</span>
-        </div>
-      </div>
-      <div class="music-track" data-src="mambo.mp3.mp3" data-title="Mambo Theme (Loop)">
-        <div class="track-info">
-          <span class="track-number">2</span>
-          <svg class="track-play-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
-            aria-hidden="true">
-            <polygon points="5 3 19 12 5 21 5 3"></polygon>
-          </svg>
-          <span class="track-title">Mambo Theme (Loop)</span>
-          <span class="track-duration">3:42</span>
-        </div>
-      </div>
-      <div class="music-track" data-src="mambo.mp3.mp3" data-title="Mambo Theme (Extended)">
-        <div class="track-info">
-          <span class="track-number">3</span>
-          <svg class="track-play-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
-            aria-hidden="true">
-            <polygon points="5 3 19 12 5 21 5 3"></polygon>
-          </svg>
-          <span class="track-title">Mambo Theme (Extended)</span>
-          <span class="track-duration">3:42</span>
-        </div>
-      </div>
-      <div class="music-track" data-src="mambo.mp3.mp3" data-title="Mambo Theme (Remix)">
-        <div class="track-info">
-          <span class="track-number">4</span>
-          <svg class="track-play-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
-            aria-hidden="true">
-            <polygon points="5 3 19 12 5 21 5 3"></polygon>
-          </svg>
-          <span class="track-title">Mambo Theme (Remix)</span>
-          <span class="track-duration">3:42</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <audio id="background-music" loop preload="metadata">
-    <source src="mambo.mp3.mp3" type="audio/mpeg">
-  </audio>
-
-  <script>
-    // Form validation and submission
-    (function () {
-      const form = document.getElementById('contactForm');
-      const successDiv = document.getElementById('formSuccess');
-      const submitBtn = document.getElementById('submitBtn');
-      const sendAnotherBtn = document.getElementById('sendAnotherBtn');
-      const charCount = document.getElementById('charCount');
-      const messageTextarea = document.getElementById('message');
-
-      // Character counter
-      messageTextarea.addEventListener('input', function () {
-        charCount.textContent = this.value.length;
-      });
-
-      // Validation helpers
-      function showError(input, message) {
-        const errorEl = input.parentElement.querySelector('.error-message');
-        if (errorEl) errorEl.textContent = message;
-        input.setAttribute('aria-invalid', 'true');
-      }
-
-      function clearError(input) {
-        const errorEl = input.parentElement.querySelector('.error-message');
-        if (errorEl) errorEl.textContent = '';
-        input.setAttribute('aria-invalid', 'false');
-      }
-
-      function validateField(input) {
-        if (input.hasAttribute('required') && !input.value.trim()) {
-          showError(input, 'Este campo es obligatorio');
-          return false;
-        }
-        if (input.type === 'email' && input.value.trim()) {
-          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-          if (!emailRegex.test(input.value.trim())) {
-            showError(input, 'Introduce un email válido');
-            return false;
-          }
-        }
-        clearError(input);
-        return true;
-      }
-
-      // Real-time validation
-      form.querySelectorAll('input, select, textarea').forEach(input => {
-        input.addEventListener('blur', () => validateField(input));
-        input.addEventListener('input', () => {
-          if (input.getAttribute('aria-invalid') === 'true') validateField(input);
-        });
-      });
-
-      // Checkbox validation
-      const privacyCheckbox = document.getElementById('privacy');
-      privacyCheckbox.addEventListener('change', () => {
-        if (privacyCheckbox.checked) clearError(privacyCheckbox);
-        else showError(privacyCheckbox, 'Debes aceptar la política de privacidad');
-      });
-
-      // Form submission
-      form.addEventListener('submit', async function (e) {
-        e.preventDefault();
-
-        // Validate all fields
-        let isValid = true;
-        form.querySelectorAll('input, select, textarea').forEach(input => {
-          if (!validateField(input)) isValid = false;
-        });
-        if (!privacyCheckbox.checked) {
-          showError(privacyCheckbox, 'Debes aceptar la política de privacidad');
-          isValid = false;
-        }
-
-        if (!isValid) return;
-
-        // Submit simulation
-        submitBtn.disabled = true;
-        submitBtn.querySelector('.btn-text').textContent = 'Enviando...';
-
-        await new Promise(resolve => setTimeout(resolve, 1500));
-
-        form.hidden = true;
-        successDiv.hidden = false;
-      });
-
-      // Send another message
-      sendAnotherBtn.addEventListener('click', () => {
-        form.reset();
-        form.hidden = false;
-        successDiv.hidden = true;
-        submitBtn.disabled = false;
-        submitBtn.querySelector('.btn-text').textContent = 'Enviar mensaje';
-        charCount.textContent = '0';
-      });
-    })();
-  </script>
-
-  <script>
-    // Music Selector Logic
-    (function () {
-      const audio = document.getElementById('background-music');
-      const selector = document.getElementById('musicSelector');
-      const toggleBtn = document.getElementById('musicToggle');
-      const tracks = document.querySelectorAll('.music-track');
-      let isPlaying = false;
-      let currentTrack = null;
-
-      // Try to play on load (will be caught if autoplay blocked)
-      function attemptAutoplay() {
-        const playPromise = audio.play();
-        if (playPromise !== undefined) {
-          playPromise.then(() => {
-            isPlaying = true;
-            updatePlayState();
-            console.log('Music started playing automatically');
-          }).catch(() => {
-            console.log('Autoplay prevented, waiting for user interaction...');
-            setupInteractionListener();
-          });
-        }
-      }
-
-      function setupInteractionListener() {
-        function playOnInteraction() {
-          audio.play().catch(e => console.log('Playback failed:', e));
-          document.removeEventListener('click', playOnInteraction);
-          document.removeEventListener('keydown', playOnInteraction);
-          document.removeEventListener('touchstart', playOnInteraction);
-        }
-        document.addEventListener('click', playOnInteraction);
-        document.addEventListener('keydown', playOnInteraction);
-        document.addEventListener('touchstart', playOnInteraction);
-      }
-
-      // Toggle playlist visibility
-      toggleBtn.addEventListener('click', () => {
-        selector.classList.toggle('collapsed');
-        const expanded = !selector.classList.contains('collapsed');
-        toggleBtn.setAttribute('aria-expanded', expanded);
-      });
-
-      // Track selection
-      tracks.forEach(track => {
-        track.addEventListener('click', () => {
-          const src = track.dataset.src;
-          const title = track.dataset.title;
-
-          // Update active state
-          tracks.forEach(t => t.classList.remove('active'));
-          track.classList.add('active');
-
-          // Change audio source
-          audio.src = src;
-          audio.load();
-
-          // Play new track
-          audio.play().then(() => {
-            isPlaying = true;
-            currentTrack = track;
-            updatePlayState();
-          }).catch(e => console.log('Playback failed:', e));
-        });
-      });
-
-      // Update play/pause icons
-      function updatePlayState() {
-        const playIcon = currentTrack ? currentTrack.querySelector('.track-play-icon') : null;
-        if (playIcon) {
-          if (isPlaying) {
-            playIcon.innerHTML = '<rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect>';
-          } else {
-            playIcon.innerHTML = '<polygon points="5 3 19 12 5 21 5 3"></polygon>';
-          }
-        }
-      }
-
-      // Audio events
-      audio.addEventListener('play', () => { isPlaying = true; updatePlayState(); });
-      audio.addEventListener('pause', () => { isPlaying = false; updatePlayState(); });
-      audio.addEventListener('ended', () => {
-        isPlaying = false;
-        updatePlayState();
-        // Could add auto-play next track here
-      });
-
-      // Set initial volume
-      audio.volume = 0.3;
-
-      // Initialize
-      attemptAutoplay();
-    })();
-  </script>
-
-  <script>
-    // Mobile navigation toggle
-    const navToggle = document.querySelector('.nav-toggle');
-    const navMenu = document.querySelector('.nav-menu');
-
-    if (navToggle && navMenu) {
-      navToggle.addEventListener('click', () => {
-        const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
-        navToggle.setAttribute('aria-expanded', !isExpanded);
-        navMenu.classList.toggle('nav-menu--open');
-      });
-
-      // Close menu when clicking a link
-      navMenu.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', () => {
-          navMenu.classList.remove('nav-menu--open');
-          navToggle.setAttribute('aria-expanded', 'false');
-        });
-      });
-    }
-
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        const targetId = this.getAttribute('href');
-        if (targetId === '#') return;
-        const target = document.querySelector(targetId);
-        if (target) {
-          e.preventDefault();
-          const navHeight = document.querySelector('.navigation-bar').offsetHeight;
-          const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
-          window.scrollTo({ top: targetPosition, behavior: 'smooth' });
-        }
-      });
-    });
-  </script>
+  <!-- External JavaScript -->
+  <script src="js/script.js"></script>
 </body>
 
 </html>

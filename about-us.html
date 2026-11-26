@@ -4,359 +4,382 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Conoce la historia, visión y equipo de Mi Proyecto DT" />
-  <title>Sobre Nosotros - Mi Proyecto DT</title>
+  <meta name="description" content="Nosotros - Lisoran: Empresa matriz con dos ramas. Sor (Tecnología) y Loran (Cafetería & Ropa). Conoce nuestra historia y visión." />
+  <meta name="keywords" content="Lisoran, Sor, Loran, historia, misión, visión, anime pink" />
+  <title>Nosotros - Lisoran Group</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
-  <header class="navigation-bar" role="navigation" aria-label="Main navigation">
+  <!-- Navigation Bar -->
+  <header class="navigation-bar" role="navigation" aria-label="Navegación principal">
     <nav class="nav-container">
-      <a href="index.html" class="nav-logo" aria-label="Mi Proyecto DT - Home">
-        <span class="logo-icon" aria-hidden="true">🎮</span>
-        <span class="logo-text">Mi Proyecto DT</span>
+      <a href="index.html" class="nav-logo" aria-label="Lisoran - Inicio">
+        <span class="logo-icon" aria-hidden="true">🌸</span>
+        <span class="logo-text">Lisoran</span>
+        <span class="logo-sub">Matriz</span>
       </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+        <span class="hamburger"></span>
+      </button>
+
       <ul class="nav-menu" id="navMenu" role="menubar">
         <li role="none"><a href="index.html" class="nav-link" role="menuitem">Inicio</a></li>
-        <li role="none"><a href="about-us.html" class="nav-link active" role="menuitem" aria-current="page">Nosotros</a>
-        </li>
+        <li role="none"><a href="about-us.html" class="nav-link active" role="menuitem">Nosotros</a></li>
         <li role="none"><a href="services.html" class="nav-link" role="menuitem">Servicios</a></li>
         <li role="none"><a href="contact.html" class="nav-link" role="menuitem">Contacto</a></li>
       </ul>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false"
-        aria-controls="navMenu">
-        <span class="hamburger" aria-hidden="true"></span>
-      </button>
     </nav>
   </header>
 
-  <main class="page-content">
-    <section class="about-hero">
-      <div class="about-hero-content">
-        <h1>Sobre <span class="highlight">Nosotros</span></h1>
+  <!-- Main Content -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="grid-overlay"></div>
+        <div class="floating-shapes">
+          <span class="shape">🌸</span>
+          <span class="shape">🤝</span>
+          <span class="shape">💡</span>
+          <span class="shape">☕</span>
+          <span class="shape">⚡</span>
+          <span class="shape">🌸</span>
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-badge brand-lisoran">Nuestra Historia</div>
+        <h1 id="hero-title" class="hero-title">
+          <span class="title-main">Lisoran</span>
+          <span class="title-sub">Donde la matriz se convierte en familia</span>
+        </h1>
         <p class="hero-description">
-          Somos un equipo apasionado de desarrolladores, diseñadores y entusiastas del anime
-          unidos por una visión común: fusionar la creatividad visual y narrativa de la animación
-          japonesa con el rigor de la ingeniería de software moderna.
+          Fundada en 2024, Lisoran nace como el sueño de unir tecnología innovadora 
+          con estilo de vida creativo. Hoy coordinamos dos ramas que comparten la misma alma.
         </p>
       </div>
     </section>
 
-    <section class="about-grid-section">
-      <div class="section-container">
-        <div class="about-grid">
-          <div class="about-card card-gradient-1">
-            <div class="card-icon">🚀</div>
-            <h2>Nuestra Misión</h2>
-            <p>
-              Transformar la manera en que los desarrolladores aprenden y construyen software,
-              utilizando la cultura geek y el anime como catalizadores de aprendizaje,
-              creatividad e innovación constante.
-            </p>
-          </div>
+    <!-- Mission & Vision Section -->
+    <section class="section mission-section" aria-labelledby="mission-title">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-badge brand-lisoran">Nuestra Esencia</div>
+          <h2 id="mission-title" class="section-title">Misión y Visión</h2>
+        </header>
 
-          <div class="about-card card-gradient-2">
-            <div class="card-icon">🔮</div>
-            <h2>Nuestra Visión</h2>
-            <p>
-              Ser la comunidad de referencia hispanohablante donde la pasión por el anime
-              y la excelencia técnica en desarrollo de software se encuentran para inspirar
-              a la próxima generación de ingenieros.
+        <div class="mission-grid">
+          <article class="mission-card lisoran-card">
+            <div class="mission-icon">🌟</div>
+            <h3 class="mission-title">Misión</h3>
+            <p class="mission-description">
+              Crear un ecosistema donde la tecnología de Sor y el lifestyle de Loran 
+              se complementen para inspirar a la comunidad anime pink a innovar 
+              y crear sin límites.
             </p>
-          </div>
-
-          <div class="about-card card-gradient-3">
-            <div class="card-icon">⚡</div>
-            <h2>Nuestros Valores</h2>
-            <ul class="values-list">
-              <li><strong>Pasión:</strong> Código escrito con devoción y detalle.</li>
-              <li><strong>Innovación:</strong> Experimentamos sin miedo a fallar.</li>
-              <li><strong>Comunidad:</strong> Crecemos juntos compartiendo conocimiento.</li>
-              <li><strong>Calidad:</strong> Estándares profesionales en todo lo que creamos.</li>
-            </ul>
-          </div>
+          </article>
+          <article class="mission-card lisoran-card">
+            <div class="mission-icon">🚀</div>
+            <h3 class="mission-title">Visión</h3>
+            <p class="mission-description">
+              Ser la empresa matriz líder en América Latina que demuestra que 
+              innovación tecnológica y cultura creativa pueden coexistir en perfecta 
+              armonía, impulsando la próxima generación de creadores.
+            </p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="team-section">
-      <div class="section-container">
-        <h2 class="section-title">El Equipo Principal</h2>
-        <p class="section-subtitle">Las mentes detrás del proyecto</p>
+    <!-- Sor Technology Section -->
+    <section class="section sor-section" aria-labelledby="sor-title">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-badge brand-sor">Rama Sor</div>
+          <h2 id="sor-title" class="section-title">Tecnología con Propósito</h2>
+          <p class="section-description">
+            La división tecnológica de Lisoran, dedicada al desarrollo de software, 
+            soluciones cloud y herramientas para desarrolladores.
+          </p>
+        </header>
+
+        <div class="sor-content">
+          <div class="sor-story">
+            <h3>De la Idea al Código</h3>
+            <p>
+              Sor nació en 2024 como el brazo técnico de Lisoran. Desde el primer 
+              commit hasta el despliegue, cada línea de código sigue la filosofía 
+              anime pink: color, creatividad y precisión. Nuestros desarrolladores 
+              crean herramientas que empoderan a la comunidad tech latinoamericana.
+            </p>
+            <p>
+              <strong>Valores Sor:</strong> Innovación, calidad, comunidad, estética.
+            </p>
+          </div>
+
+          <div class="sor-stats">
+            <div class="stat">
+              <span class="stat-number">15</span>
+              <span class="stat-label">Proyectos Activos</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">50</span>
+              <span class="stat-label">Colaboradores</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Productos Principales</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sor-products">
+          <article class="product-card">
+            <div class="product-badge brand-sor">Sor Cloud</div>
+            <h4>Sor Cloud Platform</h4>
+            <p>Infraestructura como servicio con dashboard visual, auto-escalado y 
+            soporte técnico 24/7. Ideal para startups y empresas en crecimiento.</p>
+            <a href="services.html#sor-cloud" class="btn-anime btn-anime-primary btn-brand">
+              <span>Conocer Más</span>
+            </a>
+          </article>
+          <article class="product-card">
+            <div class="product-badge brand-sor">Sor DevTools</div>
+            <h4>Herramientas para Desarrolladores</h4>
+            <p>Extensión IDE, CLI y SDK para construir aplicaciones con patrones 
+            anime. Documentación completa y comunidad activa.</p>
+            <a href="services.html#sor-devtools" class="btn-anime btn-anime-primary btn-brand">
+              <span>Descargar</span>
+            </a>
+          </article>
+          <article class="product-card">
+            <div class="product-badge brand-sor">Sor AI</div>
+            <h4>Inteligencia Artificial</h4>
+            <p>APIs de ML, modelos pre-entrenados y studio visual para crear 
+            soluciones inteligentes sin necesidad de expertise profundo.</p>
+            <a href="services.html#sor-ai" class="btn-anime btn-anime-primary btn-brand">
+              <span>Explorar</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Loran Section -->
+    <section class="section loran-section" aria-labelledby="loran-title">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-badge brand-loran">Rama Loran</div>
+          <h2 id="loran-title" class="section-title">Estilo de Vida con Alma</h2>
+          <p class="section-description">
+            La división creativa de Lisoran, que combina cafetería de especialidad 
+            con marca de ropa lifestyle.
+          </p>
+        </header>
+
+        <div class="loran-content">
+          <div class="loran-story">
+            <h3>Del Grano a la Taza</h3>
+            <p>
+              Loran surge como el corazón creativo de Lisoran. Nuestra cafetería 
+              selecciona granos de pequeñas fincas en Colombia y Etiopía, 
+              tueste medio con notas a frutos rojos y chocolate. Cada taza es 
+              una experiencia sensorial acompañada de música anime y diseño 
+              exclusivo.
+            </p>
+            <p>
+              <strong>Valores Loran:</strong> Calidad, autenticidad, comunidad, estilo.
+            </p>
+          </div>
+
+          <div class="loran-stats">
+            <div class="stat">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Locales</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">12</span>
+              <span class="stat-label">Variedades de Café</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">5</span>
+              <span class="stat-label">Colecciones de Ropa</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="loran-products">
+          <article class="product-card">
+            <div class="product-badge brand-loran">Café</div>
+            <h4>Café Signature Blend</h4>
+            <p>Edición anime pink con diseño de ilustraciones originales. 
+            Perfecto para programar o disfrutar en la oficina.</p>
+            <a href="contact.html#loran-section" class="btn-anime btn-anime-secondary btn-brand">
+              <span>Reservar</span>
+            </a>
+          </article>
+          <article class="product-card">
+            <div class="product-badge brand-loran">Ropa</div>
+            <h4>Colección "Neon Dreams"</h4>
+            <p>Hoodies, camisetas y accesorios con estampados reflectivos y 
+            colores vibrantes. Algodón orgánico, corte oversize.</p>
+            <a href="contact.html#loran-section" class="btn-anime btn-anime-secondary btn-brand">
+              <span>Ver Colección</span>
+            </a>
+          </article>
+          <article class="product-card">
+            <div class="product-badge brand-loran">Espacio</div>
+            <h4>Cafetería & Espacio Creativo</h4>
+            <p>Local físico donde el café se encuentra con la comunidad. 
+            Eventos anime, talleres tech y exposiciones de arte local.</p>
+            <a href="contact.html#loran-section" class="btn-anime btn-anie-secondary btn-brand">
+              <span>Visitar</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team & Community Section -->
+    <section class="section team-section" aria-labelledby="team-title">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-badge brand-lisoran">Nuestra Gente</div>
+          <h2 id="team-title" class="section-title">Quiénes Somos</h2>
+        </header>
 
         <div class="team-grid">
-          <div class="team-card">
-            <div class="team-avatar">
-              <span class="avatar-emoji">👨‍💻</span>
-            </div>
-            <h3>Duvan Tilano</h3>
-            <p class="team-role">Fundador & Lead Developer</p>
-            <p class="team-bio">Apasionado por la arquitectura de software, la música lofi y las series de acción. Más
-              de 5 años creando experiencias web.</p>
-          </div>
+          <article class="team-card">
+            <div class="team-avatar">👤</div>
+            <h3>Lisoran CEO</h3>
+            <p class="team-role">Fundador y Director General</p>
+            <p class="team-desc">Visionario que unió tecnología y estilo en una sola empresa.</p>
+          </article>
+          <article class="team-card">
+            <div class="team-avatar">💻</div>
+            <h3>Sor Lead</h3>
+            <p class="team-role">Director Tecnológico</p>
+            <p class="team-desc">Ingeniero senior con pasión por la cultura anime y el código limpio.</p>
+          </article>
+          <article class="team-card">
+            <div class="team-avatar">☕</div>
+            <h3>Loran Manager</h3>
+            <p class="team-role">Gerente de Cafetería & Moda</p>
+            <p class="team-desc">Barista profesional y diseñadora de moda con alma creativa.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-          <div class="team-card">
-            <div class="team-avatar">
-              <span class="avatar-emoji">👩‍🎨</span>
-            </div>
-            <h3>Elena Rostova</h3>
-            <p class="team-role">UI/UX & Art Director</p>
-            <p class="team-bio">Especialista en diseño de interfaces inspiradas en estética mecha y cyberpunk. Amante
-              del pixel art.</p>
-          </div>
-
-          <div class="team-card">
-            <div class="team-avatar">
-              <span class="avatar-emoji">🎧</span>
-            </div>
-            <h3>Kenji Sato</h3>
-            <p class="team-role">Audio & Content Creator</p>
-            <p class="team-bio">Compositor y desarrollador de contenido. Encargado de la banda sonora y análisis
-              técnicos de los sistemas de poder.</p>
+    <!-- CTA Section -->
+    <section class="section cta-section" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-content">
+          <div class="cta-badge brand-lisoran">Únete a Nuestra Historia</div>
+          <h2 id="cta-title" class="cta-title">Sé parte de la evolución</h2>
+          <p class="cta-description">
+            Ya sea como developer en Sor, cliente de Loran o colaborador de Lisoran, 
+            tu historia importa en nuestro ecosistema.
+          </p>
+          <div class="cta-actions">
+            <a href="contact.html" class="btn-anime btn-anime-primary btn-anime-lg">
+              <span>Contactar</span>
+            </a>
+            <a href="services.html" class="btn-anime btn-anime-outline btn-anime-lg">Servicios Sor</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="timeline-section">
-      <div class="section-container">
-        <h2 class="section-title">Nuestra Trayectoria</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <span class="timeline-date">2023</span>
-              <h3>Inicio del Proyecto</h3>
-              <p>Nace la idea de fusionar la pasión por el anime con tutoriales y artículos de programación técnica.</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <span class="timeline-date">2024</span>
-              <h3>Lanzamiento de la Comunidad</h3>
-              <p>Alcanzamos los primeros 1,000 miembros y lanzamos nuestros primeros frameworks de productividad.</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <span class="timeline-date">2025</span>
-              <h3>Plataforma Completa</h3>
-              <p>Rediseño total de la plataforma con servicios interactivos, banda sonora integrada y cursos
-                especializados.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
+  <!-- Global Audio Element & Music Player Widget -->
+  <audio id="bgAudio" preload="auto">
+    <source src="mambo.mp3.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div class="music-selector collapsed" id="musicSelector" aria-label="Reproductor de música Lisoran">
+    <div class="music-header">
+      <div class="music-title">
+        <span>🎵</span>
+        <span>Lisoran Sounds</span>
+      </div>
+      <button class="music-toggle" id="musicToggleBtn" aria-expanded="false" aria-label="Toggle playlist">▼</button>
+    </div>
+
+    <div class="music-current">
+      <div class="music-current-info">
+        <div class="music-current-title" id="currentTrackTitle">Mambo Theme</div>
+        <div class="music-current-artist" id="currentTrackArtist">Sor Tech OST</div>
+      </div>
+      <div class="volume-control">
+        <label for="volumeSlider" class="sr-only">Volumen</label>
+        <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="0.8" aria-label="Control de volumen">
+        <span class="volume-value">80%</span>
+      </div>
+    </div>
+
+    <ul class="music-playlist" id="musicPlaylist"></ul>
+  </div>
+
+  <!-- Site Footer -->
   <footer class="site-footer">
-    <div class="footer-content">
-      <div class="footer-brand">
-        <span class="logo-icon">🎮</span>
-        <span class="logo-text">Mi Proyecto DT</span>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="logo-text">🌸 Lisoran Group</div>
+          <p>Empresa matriz coordinando innovación (Sor) y creatividad (Loran). 
+          Estética anime pink, alma humana.</p>
+          <div class="footer-brands">
+            <span class="footer-brand-tag brand-sor">Sor Tech</span>
+            <span class="footer-brand-tag brand-loran">Loran Café & Ropa</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about-us.html">Nosotros</a></li>
+            <li><a href="services.html">Servicios</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Ramas</h4>
+          <ul>
+            <li><a href="services.html">💻 Sor Technology</a></li>
+            <li><a href="contact.html#loran-section">☕ Loran Café</a></li>
+            <li><a href="contact.html#loran-section">👕 Loran Wear</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="contact.html">Formulario Unificado</a></li>
+            <li><a href="#">Soporte Sor</a></li>
+            <li><a href="#">Reservas Loran</a></li>
+          </ul>
+        </div>
       </div>
-      <p class="footer-tagline">Donde el anime se encuentra con el código</p>
-      <div class="footer-links">
-        <a href="index.html">Inicio</a>
-        <a href="about-us.html">Nosotros</a>
-        <a href="services.html">Servicios</a>
-        <a href="contact.html">Contacto</a>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lisoran Group. Todos los derechos reservados. Hecho con 🌸 estética Anime Pink.</p>
       </div>
-      <p class="footer-copyright">&copy; 2025 Mi Proyecto DT. Hecho con pasión por desarrolladores otaku.</p>
     </div>
   </footer>
 
-  <!-- Music Selector -->
-  <div class="music-selector" id="musicSelector" role="region" aria-label="Reproductor de música">
-    <div class="music-header">
-      <div class="music-info">
-        <svg class="music-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-          stroke-width="2" aria-hidden="true">
-          <path d="M9 18V5l12-2v13"></path>
-          <circle cx="6" cy="18" r="3"></circle>
-          <circle cx="18" cy="16" r="3"></circle>
-        </svg>
-        <span class="music-title">Banda sonora</span>
-      </div>
-      <button class="music-toggle" id="musicToggle" aria-label="Expandir/colapsar reproductor" aria-expanded="false">
-        <svg class="expand-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-          stroke-width="2" aria-hidden="true">
-          <polyline points="5 15 12 22 19 15"></polyline>
-        </svg>
-      </button>
-    </div>
-    <div class="music-playlist">
-      <div class="music-track active" data-src="mambo.mp3.mp3" data-title="Mambo Theme">
-        <div class="track-info">
-          <span class="track-number">1</span>
-          <svg class="track-play-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
-            aria-hidden="true">
-            <polygon points="5 3 19 12 5 21 5 3"></polygon>
-          </svg>
-          <span class="track-title">Mambo Theme</span>
-          <span class="track-duration">3:42</span>
-        </div>
-      </div>
-      <div class="music-track" data-src="mambo.mp3.mp3" data-title="Mambo Theme (Loop)">
-        <div class="track-info">
-          <span class="track-number">2</span>
-          <svg class="track-play-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
-            aria-hidden="true">
-            <polygon points="5 3 19 12 5 21 5 3"></polygon>
-          </svg>
-          <span class="track-title">Mambo Theme (Loop)</span>
-          <span class="track-duration">3:42</span>
-        </div>
-      </div>
-      <div class="music-track" data-src="mambo.mp3.mp3" data-title="Mambo Theme (Extended)">
-        <div class="track-info">
-          <span class="track-number">3</span>
-          <svg class="track-play-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
-            aria-hidden="true">
-            <polygon points="5 3 19 12 5 21 5 3"></polygon>
-          </svg>
-          <span class="track-title">Mambo Theme (Extended)</span>
-          <span class="track-duration">3:42</span>
-        </div>
-      </div>
-      <div class="music-track" data-src="mambo.mp3.mp3" data-title="Mambo Theme (Remix)">
-        <div class="track-info">
-          <span class="track-number">4</span>
-          <svg class="track-play-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
-            aria-hidden="true">
-            <polygon points="5 3 19 12 5 21 5 3"></polygon>
-          </svg>
-          <span class="track-title">Mambo Theme (Remix)</span>
-          <span class="track-duration">3:42</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <audio id="background-music" loop preload="metadata">
-    <source src="mambo.mp3.mp3" type="audio/mpeg">
-  </audio>
-
-  <script>
-    // Music Selector Logic
-    (function () {
-      const audio = document.getElementById('background-music');
-      const selector = document.getElementById('musicSelector');
-      const toggleBtn = document.getElementById('musicToggle');
-      const tracks = document.querySelectorAll('.music-track');
-      let isPlaying = false;
-      let currentTrack = null;
-
-      // Try to play on load (will be caught if autoplay blocked)
-      function attemptAutoplay() {
-        const playPromise = audio.play();
-        if (playPromise !== undefined) {
-          playPromise.then(() => {
-            isPlaying = true;
-            updatePlayState();
-            console.log('Music started playing automatically');
-          }).catch(() => {
-            console.log('Autoplay prevented, waiting for user interaction...');
-            setupInteractionListener();
-          });
-        }
-      }
-
-      function setupInteractionListener() {
-        function playOnInteraction() {
-          audio.play().catch(e => console.log('Playback failed:', e));
-          document.removeEventListener('click', playOnInteraction);
-          document.removeEventListener('keydown', playOnInteraction);
-          document.removeEventListener('touchstart', playOnInteraction);
-        }
-        document.addEventListener('click', playOnInteraction);
-        document.addEventListener('keydown', playOnInteraction);
-        document.addEventListener('touchstart', playOnInteraction);
-      }
-
-      // Toggle playlist visibility
-      toggleBtn.addEventListener('click', () => {
-        selector.classList.toggle('collapsed');
-        const expanded = !selector.classList.contains('collapsed');
-        toggleBtn.setAttribute('aria-expanded', expanded);
-      });
-
-      // Track selection
-      tracks.forEach(track => {
-        track.addEventListener('click', () => {
-          const src = track.dataset.src;
-          const title = track.dataset.title;
-
-          // Update active state
-          tracks.forEach(t => t.classList.remove('active'));
-          track.classList.add('active');
-
-          // Change audio source
-          audio.src = src;
-          audio.load();
-
-          // Play new track
-          audio.play().then(() => {
-            isPlaying = true;
-            currentTrack = track;
-            updatePlayState();
-          }).catch(e => console.log('Playback failed:', e));
-        });
-      });
-
-      // Update play/pause icons
-      function updatePlayState() {
-        const playIcon = currentTrack ? currentTrack.querySelector('.track-play-icon') : null;
-        if (playIcon) {
-          if (isPlaying) {
-            playIcon.innerHTML = '<rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect>';
-          } else {
-            playIcon.innerHTML = '<polygon points="5 3 19 12 5 21 5 3"></polygon>';
-          }
-        }
-      }
-
-      // Audio events
-      audio.addEventListener('play', () => { isPlaying = true; updatePlayState(); });
-      audio.addEventListener('pause', () => { isPlaying = false; updatePlayState(); });
-      audio.addEventListener('ended', () => {
-        isPlaying = false;
-        updatePlayState();
-      });
-
-      // Set initial volume
-      audio.volume = 0.3;
-
-      // Initialize
-      attemptAutoplay();
-    })();
-  </script>
-
-  <script>
-    // Mobile menu toggle
-    const navToggle = document.getElementById('navToggle');
-    const navMenu = document.getElementById('navMenu');
-
-    if (navToggle && navMenu) {
-      navToggle.addEventListener('click', () => {
-        const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
-        navToggle.setAttribute('aria-expanded', !isExpanded);
-        navMenu.classList.toggle('nav-menu--open');
-      });
-
-      // Close menu when clicking a link
-      navMenu.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', () => {
-          navMenu.classList.remove('nav-menu--open');
-          navToggle.setAttribute('aria-expanded', 'false');
-        });
-      });
-    }
-  </script>
+  <!-- External JavaScript -->
+  <script src="js/script.js"></script>
 </body>
 
 </html>
